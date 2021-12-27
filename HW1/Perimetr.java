@@ -14,10 +14,10 @@ public class Perimetr {
 		double p = 3.14;
 		
 			
-		System.out.println("The perimeter calculation:");
+		System.out.println("The area calculation:");
 		System.out.println(p * r * r);
 	
-		System.out.println("The area calculation:");
+		System.out.println("The perimeter calculation:");
 		System.out.println(2*p*r);
 		
 }
