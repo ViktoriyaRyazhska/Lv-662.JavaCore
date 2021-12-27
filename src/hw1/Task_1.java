@@ -9,8 +9,7 @@ public class Task_1 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		double pi = 3.14;
 
-		System.out
-				.println("This program wll calculate perimeter and area pf the flower bed by entering the radius. \n");
+		System.out.println("This program wll calculate perimeter and area pf the flower bed by entering the radius. \n");
 		System.out.printf("Please enter radius: ");
 		double r = Integer.parseInt(br.readLine());
 
