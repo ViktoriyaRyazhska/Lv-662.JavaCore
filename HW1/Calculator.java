@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 public class Calculator {
 	public static void main(String[] args) throws IOException {
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	    
 	    System.out.println("\"Please add numbers for sum calcluation\"");
 	    
 	    double a = Integer.parseInt(br.readLine()); 
