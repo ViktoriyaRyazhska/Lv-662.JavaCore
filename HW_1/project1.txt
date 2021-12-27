@@ -1,0 +1,33 @@
+ackage com.company;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+
+
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Input a");
+        int a = Integer.parseInt(br.readLine());
+        System.out.println("Input b");
+        int b = Integer.parseInt(br.readLine());
+        int sum = a+b;
+        int dif = a-b;
+        float mul = a*b;
+        float div = a/b;
+        System.out.println("A+B="+sum);
+        System.out.println("A-B="+dif);
+        System.out.println("A*B="+mul);
+        System.out.println("A/B="+div);
+        System.out.println("Hello. Howe are you?");
+        String you = br.readLine();
+        System.out.println("Hello, you are " + you);
+
+
+    }
+}
