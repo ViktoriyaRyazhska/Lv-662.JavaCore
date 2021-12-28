@@ -3,8 +3,7 @@ public class Employee {
 
 
     private static int totalSum =0;
-    private static int count = 0;
-
+  
     private   String name;
     private   int rate;
     private   int hours;
@@ -25,9 +24,7 @@ public class Employee {
     public Employee() {
     }
 
-    {
-        count++;
-    }
+
 
     public  String getName() {
         return name;
