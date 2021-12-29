@@ -54,9 +54,9 @@ public class Person {
 	}
 	
 	
-	public void input() throws IOException {
+	public void input(BufferedReader br) throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
-		 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		 System.out.println("Please enter the birth year");
 		 this.birthYear=Integer.parseInt(br.readLine());
 		 System.out.println("Please enter your first name");
@@ -71,8 +71,8 @@ public class Person {
 	}
 	
 	
-	public void changeName()throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public void changeName(BufferedReader br)throws IOException {
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("\nWould you like to change your first name, " + firstName + "? If yes, please enter name");
 		this.firstName=br.readLine();
 		
