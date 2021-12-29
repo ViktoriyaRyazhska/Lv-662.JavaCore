@@ -57,7 +57,7 @@ public class Employee {
 	}
 	
 	public double getBonuses() {
-		return rait * hours * 0.1;
+		return getSalary() * 0.1;
 	}
 
 	@Override
@@ -70,7 +70,6 @@ public class Employee {
 		this.rait = rait;
 		totalSum += rait;
 	}
-	
 	
 	
 	
