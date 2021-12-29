@@ -1,6 +1,5 @@
 package lesson_3;
 
-import java.util.Comparator;
 
 public class Product_main {
 
