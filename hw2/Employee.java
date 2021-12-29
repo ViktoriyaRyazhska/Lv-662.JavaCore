@@ -69,7 +69,7 @@ public class Employee {
 	}
 	
 	public double getBonuses() {
-		return getSalary()/10;
+		return getSalary()*0.1;
 	}
 
 }
