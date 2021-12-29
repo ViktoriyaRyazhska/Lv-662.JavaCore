@@ -12,7 +12,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 8|lutsenko|+|+||||
 9|Sirkolko|+|+||||
 10|MyroslavaVynokur|+|+||||
-11|||||||
+11|Oleg Kruts|+|.||||
 12|||||||
 13|||||||
 14|||||||
