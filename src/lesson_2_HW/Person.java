@@ -3,6 +3,7 @@ package lesson_2_HW;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
 
 public class Person {
 
@@ -49,7 +50,7 @@ public class Person {
 	
 	
 	public void getAge() {
-		System.out.println(2021 - birthYear);
+		System.out.println(LocalDate.now().getYear() - birthYear);
 	}
 	
 	
