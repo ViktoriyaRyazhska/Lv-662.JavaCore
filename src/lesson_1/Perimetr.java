@@ -11,7 +11,7 @@ public class Perimetr {
 	System.out.println("Please enter the radius");
 	
 	double r = Integer.parseInt(br.readLine()); 
-	double p = 3.14;
+	double p = Math.PI;
 	
 		
 	System.out.println("The area calculation:");
