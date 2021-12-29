@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Circle {
+public class Circle1 {
 	private Double getPerimeter(double a) throws IOException {
 
 		double pi = 3.14;
@@ -23,7 +23,7 @@ public class Circle {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		double r = Double.parseDouble(br.readLine());
 
-		Circle flower_bed = new Circle();
+		Circle1 flower_bed = new Circle1();
 
 		double result1 = flower_bed.getPerimeter(r);
 		double result2 = flower_bed.getArea(r);
