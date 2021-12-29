@@ -4,7 +4,6 @@ public class Data {
 
 	public static void main(String[] args) {
 		Employee e1 = new Employee("Anna", 6, 9);
-		
 		Employee e2 = new Employee();
 		e2.setName("Mariia");
 		e2.setRait(4);
