@@ -48,8 +48,8 @@ public class Person {
 	
 	
 	
-	public int getAge() {
-		return 2021 - birthYear;
+	public void getAge() {
+		System.out.println(2021 - birthYear);
 	}
 	
 	
@@ -65,14 +65,14 @@ public class Person {
 	}
 	
 	
-	public String output() {
-		return "Your name is " + firstName + " " + lastName + " and you are ";
+	public void output() {
+		System.out.print("Person name is " + firstName + " " + lastName + " and you are ");
 	}
 	
 	
 	public void changeName()throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Would you like to change your first name, " + firstName + "? If yes, please enter name");
+		System.out.println("\nWould you like to change your first name, " + firstName + "? If yes, please enter name");
 		this.firstName=br.readLine();
 		
 		

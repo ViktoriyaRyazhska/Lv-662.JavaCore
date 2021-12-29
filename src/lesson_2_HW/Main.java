@@ -12,39 +12,39 @@ public class Main {
 	    
 	  
 	    p1.input();
-	    System.out.print(p1.output());
-	    System.out.println(p1.getAge());
+	    p1.output();
+	    p1.getAge();   
 	    p1.changeName();
-	    System.out.print(p1.output());
-	    System.out.println(p1.getAge());
+	    p1.output();
+	    p1.getAge();
 
 	    p2.input();
-	    System.out.print(p2.output());
-	    System.out.println(p2.getAge());
+	    p2.output();
+	    p2.getAge();   
 	    p2.changeName();
-	    System.out.print(p2.output());
-	    System.out.println(p2.getAge());
-	
+	    p2.output();
+	    p2.getAge();
+
 	    p3.input();
-	    System.out.print(p3.output());
-	    System.out.println(p3.getAge());
+	    p3.output();
+	    p3.getAge();   
 	    p3.changeName();
-	    System.out.print(p3.output());
-	    System.out.println(p3.getAge());
-	    
+	    p3.output();
+	    p3.getAge();
+
 	    p4.input();
-	    System.out.print(p4.output());
-	    System.out.println(p4.getAge());
+	    p4.output();
+	    p4.getAge();   
 	    p4.changeName();
-	    System.out.print(p4.output());
-	    System.out.println(p4.getAge());
-	    
+	    p4.output();
+	    p4.getAge();
+
 	    p5.input();
-	    System.out.print(p5.output());
-	    System.out.println(p5.getAge());
+	    p5.output();
+	    p5.getAge();   
 	    p5.changeName();
-	    System.out.print(p5.output());
-	    System.out.println(p5.getAge());
+	    p5.output();
+	    p5.getAge();
 	}
 	
 }
