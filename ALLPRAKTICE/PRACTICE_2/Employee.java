@@ -1,4 +1,4 @@
-package Task_2;
+package Task_2Practice;
 
 public class Employee {
     private String name;
@@ -56,7 +56,7 @@ public class Employee {
         return rate * hours;
     }
     public double getBonuses() {
-        return (rate * hours * 0.1) ;
+        return getSalary() * 0.1 ;
     }
 }
 

@@ -1,4 +1,4 @@
-package Task_2;
+package Task_2Practice;
 
 public class Application {
     public static void main(String[] args) {
@@ -12,6 +12,8 @@ public class Application {
             person2.setHours(8);
 
         Employee person3 = new Employee("Roman" , 8 ,15);
+
+
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person3);
@@ -19,6 +21,8 @@ public class Application {
         System.out.println(person1.getSalary());
         System.out.println(person2.getSalary());
         System.out.println(person3.getSalary());
+
+        System.out.println(person1.getSalary()+person2.getSalary()+person3.getSalary());
 
         System.out.println(person1.getBonuses() + " bonus");
         System.out.println(person2.getBonuses() + " bonus");
