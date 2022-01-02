@@ -1,0 +1,34 @@
+package edu.softserve;
+
+public class Appl {
+
+	public static void main(String[] args) {
+
+		Employee s1 = new Employee();
+		s1.setName("Ivan");
+		s1.setHours(10);
+		s1.setRate(20);
+		s1.setRate(23);
+
+		Employee s2 = new Employee("Masha", 10);
+		s2.setHours(10);
+		s2.setHours(8);
+
+		Employee s3 = new Employee("Vova", 10, 9);
+
+		System.out.println(s1.toString());
+		System.out.println(s1);
+		System.out.println(s1.getSalary());
+		System.out.println(s2);
+		System.out.println(s2.getSalary());
+        System.out.println("10% salary is:\t");
+		System.out.println(s2.getBonuses());
+		System.out.println(s3);
+	    System.out.println(s3.getSalary());
+		System.out.print("Total sum is\t");
+		System.out.println(Employee.getTotalSum());
+	}
+	
+
+}
+	

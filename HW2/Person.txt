@@ -1,0 +1,69 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.time.LocalDate;
+
+public class Person {
+
+	private String name;
+	private String last;
+	private int BirthYear;
+
+	public Person() {
+
+	}
+
+	public Person(String name, String last) {
+		this.name = name;
+		this.last = last;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLast() {
+		return last;
+	}
+
+	public void setLast(String last) {
+		this.last = last;
+	}
+
+	public int getBirthYear() {
+		return BirthYear;
+	}
+
+	public void setBirthYear(int birthYear) {
+		BirthYear = birthYear;
+	}
+
+	public int getAge() {
+		return LocalDate.now().getYear() - BirthYear;
+	}
+
+	public String toOutput() {
+		return "Person [name=" + name + ", last=" + last + ", BirthYear=" + BirthYear + "]";
+	}
+
+	public void input(BufferedReader br) throws IOException {
+		System.out.println("Name is");
+		this.name = br.readLine();
+		System.out.println("Last name is");
+		this.last = br.readLine();
+		System.out.println("Birthday is");
+		this.BirthYear = Integer.parseInt(br.readLine());
+	}
+
+	public void changeName(String fn, String ln) {
+		name = fn;
+		last = ln;
+
+	}
+}
