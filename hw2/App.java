@@ -1,9 +1,13 @@
 package hw2;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class App {
 	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		Employee e1 = new Employee();
 		e1.setName("Ivan");
@@ -24,7 +28,7 @@ public class App {
 		p1.setLastName("Wonka");
 		p1.setBirthYear(1995);
 		Person p2 = new Person();
-		p2.input();
+		p2.input(br);
 		Person p3 = new Person("Ryan", "Gosling");
 		p3.setBirthYear(1980);
 		Person p4 = new Person("Keanu", "Reeves");
