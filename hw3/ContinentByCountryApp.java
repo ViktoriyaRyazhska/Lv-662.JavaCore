@@ -1,4 +1,5 @@
 package hw3;
+// Why use enum here?
 
 import java.io.BufferedReader;
 import java.io.FileReader;
