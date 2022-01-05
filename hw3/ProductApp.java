@@ -5,7 +5,7 @@ public class ProductApp {
 	public static void main(String[] args) {
 
 		Product[] stock = new Product[4];
-		stock[0] = new Product("Apples", 30.85, 70);
+		stock[0] = new Product("Apples", 30.33, 70);
 		stock[1] = new Product("Bananas", 25.89, 100);
 		stock[2] = new Product("Tangerines", 40.85, 170);
 		stock[3] = new Product("Tomatoes", 60.35, 90);
