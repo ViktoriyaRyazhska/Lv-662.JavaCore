@@ -2,7 +2,7 @@ package hw3;
 
 import java.util.Map;
 
-public class IntegerToRoman {
+public class IntegerToRomanAndBack {
 
 	static String intToRoman(int num) {
 		
