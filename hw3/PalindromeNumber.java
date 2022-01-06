@@ -3,6 +3,7 @@ package hw3;
 public class PalindromeNumber {
 	
 static boolean isPalindrome(int x) {
+	if (x < 0) return false;
 	int a = x, b = 0;
 	while (a > 0) {
 		b = b * 10 + a % 10;
@@ -13,7 +14,7 @@ static boolean isPalindrome(int x) {
 
 	public static void main(String[] args) {
 
-		System.out.println(isPalindrome(1254521));
+		System.out.println(isPalindrome(1234554321));
 		
 	}
 
