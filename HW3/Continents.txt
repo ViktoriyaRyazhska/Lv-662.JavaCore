@@ -1,0 +1,57 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class EnumInSwitch {
+
+	public enum Continent {
+		EUROPE, ASIA, AFRICA, AMERICA;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter your country:");
+
+		String country = br.readLine();
+		
+		Continent continent = Continent.EUROPE; // calling the enum method
+
+		switch (country.toUpperCase()) {
+		case "UKRAINE":
+		case "POLAND":
+		case "HUNGARY":
+			continent = Continent.EUROPE;
+			System.out.println(continent);
+			break;
+
+		case "US":
+		case "BRAZIL":
+		case "PERU":
+			continent = Continent.AMERICA;
+			System.out.println(continent);
+			break;
+
+		case "ZANZIBAR":
+		case "KENIA":
+		case "ANGOLA":
+			continent = Continent.AFRICA;
+			System.out.println(continent);
+			break;
+
+		case "CHINA":
+		case "INDIA":
+		case "LAOS":
+			continent = Continent.ASIA;
+			System.out.println(continent);
+			break;
+
+		default:
+			System.out.println("No such country");
+			System.exit(0);
+
+		}
+	}
+}

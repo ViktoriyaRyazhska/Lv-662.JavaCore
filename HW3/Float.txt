@@ -1,0 +1,53 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Numbers {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		float count = 0;
+		int point = (int) count;
+
+		System.out.println("What is a?");
+		float a = Float.parseFloat(br.readLine());
+		if (a >= -5 & a <= 5)
+			System.out.println("Your number belongs to the range [-5,5]");
+		else
+			System.out.println("Your number doesn't belong to the range [-5,5]");
+
+		System.out.println("What is b?");
+		float b = Float.parseFloat(br.readLine());
+		if (b >= -5 & b <= 5)
+			System.out.println("Your number belongs to the range [-5,5]");
+		else
+			System.out.println("Your number doesn't belong to the range [-5,5]");
+
+		System.out.println("What is c?");
+		float c = Float.parseFloat(br.readLine());
+		if (c >= -5 & c <= 5)
+			System.out.println("Your number belongs to the range [-5,5]");
+		else
+			System.out.println("Your number doesn't belong to the range [-5,5]");
+
+		// not sure above is correct so adding another method
+
+		System.out.println("What is d?");
+		float d = Float.parseFloat(br.readLine());
+		System.out.println("What is e?");
+		float e = Float.parseFloat(br.readLine());
+		System.out.println("What is f?");
+		float f = Float.parseFloat(br.readLine());
+
+		if (d >= -5 & d <= 5)
+			point++;
+		if (e >= -5 & e <= 5)
+			point++;
+		if (f >= -5 & f <= 5)
+			point++;
+
+		System.out.println("Total number which belong to range" + point);
+
+	}
+}

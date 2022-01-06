@@ -1,0 +1,46 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Numbers3 {
+
+	public enum Error {
+		ERROR_1, ERROR_2, ERROR_3;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Input number of the error:400,401,402,403,404,405,410,411,412");
+
+		int errorNumber = Integer.parseInt(br.readLine());
+
+		Error newError = Error.ERROR_1;
+
+		switch (errorNumber) {
+		case 400:
+		case 402:
+		case 404:
+			newError = Error.ERROR_1;
+			System.out.println(newError);
+			break;
+		case 401:
+		case 403:
+		case 405:
+			newError = Error.ERROR_2;
+			System.out.println(newError);
+			break;
+		case 410:
+		case 411:
+		case 412:
+			newError = Error.ERROR_3;
+			System.out.println(newError);
+			break;
+		default:
+			System.out.println("Error is unknown");
+
+		}
+	}
+}

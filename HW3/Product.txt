@@ -1,0 +1,98 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Objects;
+
+public class Product {
+	String name;
+	double price;
+	int quantity;
+
+	public Product() {
+
+	}
+
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, price, quantity);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return Objects.equals(name, other.name) && price == other.price && quantity == other.quantity;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		Product p1 = new Product("Snikers", 10.50, 35);
+		Product p2 = new Product("Olenka", 7.35, 28);
+		Product p3 = new Product("Baunty", 12.50, 15);
+		Product p4 = new Product("Lion", 10.40, 14);
+		
+		if (p1.getPrice() > p2.getPrice() & p1.getPrice() > p3.getPrice()
+				& p1.getPrice() > p4.getPrice())
+			System.out.println(p1.getName() + " is the most expensive product and quantity is " + p1.getQuantity());
+		else if (p2.getPrice() > p1.getPrice() & p2.getPrice() > p3.getPrice()
+				& p2.getPrice() > p4.getPrice())
+			System.out.println(p2.getName() + " is the most expensive product and quantity is " + p2.getQuantity());
+		else if (p3.getPrice() > p1.getPrice() & p3.getPrice() > p2.getPrice()
+				& p3.getPrice() > p4.getPrice())
+			System.out.println(p3.getName() + " is the most expensive product and quantity is " + p3.getQuantity());
+		else
+			System.out.println(p4.getName() + " is the most expensive product and quantity is " + p4.getQuantity());
+		
+
+		if (p1.getQuantity() > p2.getQuantity() & p1.getQuantity() > p3.getQuantity()
+				& p1.getQuantity() > p4.getQuantity())
+			System.out.println(p1.getName() + " has the biggest quantity");
+		else if (p2.getQuantity() > p1.getQuantity() & p2.getQuantity() > p3.getQuantity()
+				& p2.getQuantity() > p4.getQuantity())
+			System.out.println(p2.getName() + " has the biggest quantity");
+		else if (p3.getQuantity() > p1.getQuantity() & p3.getQuantity() > p2.getQuantity()
+				& p3.getQuantity() > p4.getQuantity())
+			System.out.println(p3.getName() + " has the biggest quantity");
+		else
+			System.out.println(p4.getName() + " has the biggest quantity");
+	}
+
+}

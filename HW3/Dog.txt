@@ -1,0 +1,121 @@
+package edu.softserve;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Objects;
+
+public class Pet {
+	String name;
+	int age;
+	String breed;
+
+	public Pet() {
+
+	}
+
+	public Pet(String name, int age, String breed) {
+		this.name = name;
+		this.age = age;
+		this.breed = breed;
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getBreed() {
+		return breed;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public enum Breed {
+		PIT_BULL, SPANIEL, HUSKIES;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(age, breed, name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pet other = (Pet) obj;
+		return age == other.age && Objects.equals(breed, other.breed) && Objects.equals(name, other.name);
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter breed of your pet:");
+
+		String breedType = br.readLine();
+
+		Breed breed = Breed.PIT_BULL;
+
+		switch (breedType.toUpperCase()) {
+		case "AMERICAN BULLY":
+		case "AMERICAN PIT BULL TERRIER":
+		case "BULLDOG":
+			breed = Breed.PIT_BULL;
+			System.out.println("Breed of your dog is:" + " " + breed);
+			break;
+		case "BOYKIN SPANIEL":
+		case "COCKER SPANIEL":
+		case "BRITTANY":
+			breed = Breed.SPANIEL;
+			System.out.println("Breed of your dog is:" + " " + breed);
+			break;
+		case "SIBERIAN HUSKY":
+		case "ALASKAN MALAMUT":
+		case "KEECHOND CHINOOK":
+			breed = Breed.HUSKIES;
+			System.out.println("Breed of your dog is:" + " " + breed);
+			break;
+		default:
+			System.out.println("Breed is unknown");
+		}
+
+		Pet dog1 = new Pet("Hachiko", 5, "Akita");
+		Pet dog2 = new Pet("Beethoven", 8, "Saint Bernard");
+		Pet dog3 = new Pet("Lassie", 8, "Rough Collie");
+		
+		System.out.println("Is the dog1 name = dog 2 name?");
+		System.out.println(dog1.getName().equals(dog2.getName()));
+		System.out.println("Is the dog2 name = dog 3 name?");
+		System.out.println(dog2.getName().equals(dog3.getName()));
+		System.out.println("Is the dog3 name = dog 1 name?");
+		System.out.println(dog3.getName().equals(dog1.getName()));
+
+		if (dog1.getAge() > dog2.getAge() && dog1.getAge() > dog3.getAge())
+			System.out.println("The oldest is: " + dog1.getName() + " " + dog1.getAge() + " " + "years old");
+		else if (dog2.getAge() > dog3.getAge() && dog2.getAge() > dog1.getAge())
+			System.out.println("The oldest is: " + dog2.getName() + " " + dog2.getAge() + " " + "years old");
+		else
+			System.out.println("The oldest is: " + dog3.getName() + " " + dog3.getAge() + " " + "years old");
+
+	}
+
+}
