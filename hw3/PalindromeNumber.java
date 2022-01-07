@@ -4,12 +4,7 @@ public class PalindromeNumber {
 	
 static boolean isPalindrome(int x) {
 	if (x < 0) return false;
-	int a = x, b = 0;
-	while (a > 0) {
-		b = b * 10 + a % 10;
-		a = a / 10;
-	}
-	return x == b;
+	return x == ReverseInteger.reverse(x);
 	}
 
 	public static void main(String[] args) {
