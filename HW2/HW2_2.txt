@@ -1,0 +1,46 @@
+package hw2;
+
+public class Person {
+	
+	private String firstName;
+	private String lastName;
+	private int birthYear;
+	
+	public Person() {
+
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	public int getBirthYear() {
+		return birthYear;
+	}
+	public static int now=2022;
+	public void setBirthYear(int birthYear) {
+		this.birthYear = now-birthYear;
+	}
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + firstName + ", lastName=" + lastName +", birthYear=" + birthYear+ "]";
+	}
+	public void move(String firstName, String lastName, int birthYear) {
+	this.firstName=lastName;
+	this.lastName=firstName;
+	System.out.println("Person [name=" + firstName + ", lastName=" + lastName +", birthYear=" + (now-birthYear)+ "]");
+	}
+}

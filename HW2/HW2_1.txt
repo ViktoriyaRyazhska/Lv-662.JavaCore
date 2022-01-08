@@ -1,0 +1,42 @@
+package hw2;
+
+
+public class Apll {
+	public static void main(String[] args) {
+		Person p1 = new Person();
+		p1.setFirstName("Olga");
+		p1.setLastName("Kit");
+		p1.setBirthYear(1998);
+		System.out.println(p1.toString());
+		p1.move("Olga", "Kit", 1998);
+		
+		Person p2 = new Person();
+		p2.setFirstName("Igor");
+		p2.setLastName("Gyk");
+		p2.setBirthYear(1999);
+		p2.move("Igor", "Gyk", 1999);
+		System.out.println(p2.toString());
+		
+		Person p3 = new Person();
+		p3.setFirstName("Victor");
+		p3.setLastName("Hmil");
+		p3.setBirthYear(2000);
+		p3.move("Victor", "Hmil", 2000);
+		System.out.println(p3.toString());
+	
+		Person p4 = new Person();
+		p4.setFirstName("Ira");
+		p4.setLastName("Dika");
+		p4.setBirthYear(2000);
+		p4.move("Ira", "Dika", 2000);
+		System.out.println(p4.toString());
+		
+		Person p5 = new Person();
+		p5.setFirstName("Orest");
+		p5.setLastName("Moroz");
+		p5.setBirthYear(1995);
+		p5.move("Orest", "Moroz", 1995);
+		System.out.println(p5.toString());
+	
+	}
+}
