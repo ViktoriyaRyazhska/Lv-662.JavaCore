@@ -2,7 +2,7 @@ package hw3;
 
 public class AdditionalTasks {
 	
-	//Implement power(x, n), which calculates x raised to the power n (i.e., x^n).
+	// Implement power(x, n), which calculates x raised to the power n (i.e., x^n).
 	
 	static double myPow(double x, int n) {
 		
@@ -22,21 +22,45 @@ public class AdditionalTasks {
         
     }
 	
-	/* Given a non-negative integer x, compute and return the square root of x.
-	   Since the return type is an integer, the decimal digits are truncated, 
-	   and only the integer part of the result is returned. */
+	// Given a non-negative integer x, compute and return the square root of x.
+	   	
+	static double mySqrt(int x) {
+		
+		double guess;
+		
+		double root = x / 2;
+		
+		do {
+			guess = root;
+			root = (guess + x / guess) / 2;
+		} while (guess != root);
+		
+		return root;
+						        
+    }
 	
-	//static int mySqrt(int x) {
-		
-		
-        
-    //}
+	// Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
 
-
+	static String convertToTitle(int columnNumber) {
+     
+		int number = columnNumber;
+		StringBuilder title = new StringBuilder();
+		
+		while (number > 0) {
+			number --;
+			title.insert(0, (char) (65 + number % 26));
+			number /= 26;
+		}
+		
+		return title.toString();
+		
+    }
 
 	public static void main(String[] args) {
 		
 		System.out.println(myPow(2, -1));
+		System.out.println(mySqrt(125));
+		System.out.println(convertToTitle(27));
 
 	}
 
