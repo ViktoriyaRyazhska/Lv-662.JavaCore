@@ -1,0 +1,40 @@
+package lesson3;
+
+public class ApllProduct {
+	public static void main(String[] args) {
+		Product p1 = new Product("Apple", 30 , 120);
+		Product p2 = new Product("Banana", 50 , 45);
+		Product p3 = new Product("Mandarin", 180 , 55);
+		Product p4 = new Product("Avocado", 20 , 170);
+		
+	System.out.println(p1);
+	System.out.println(p2);
+	System.out.println(p3);
+	System.out.println(p4);
+	
+	if (p1.getPrice() >= p2.getPrice() & p1.getPrice() >=p3.getPrice() & p1.getPrice() >=p4.getPrice()) {
+		System.out.println("The most expensive product is " +p1.getName()+" and it is   "+p1.getQuantity()+ "   units.");
+	}
+	if (p2.getPrice() >= p1.getPrice() & p2.getPrice() >=p3.getPrice() & p2.getPrice() >=p4.getPrice()) {
+		System.out.println("The most expensive product is " +p2.getName()+" and it is   "+p2.getQuantity()+ "   units.");
+	}
+	if (p3.getPrice() >= p1.getPrice() & p3.getPrice() >=p2.getPrice() & p3.getPrice() >=p4.getPrice()) {
+		System.out.println("The most expensive product is " +p3.getName()+" and it is   "+p3.getQuantity()+ "   units.");
+	}
+	if (p4.getPrice() >= p1.getPrice() & p4.getPrice() >=p2.getPrice() & p4.getPrice() >=p3.getPrice()) {
+		System.out.println("The most expensive product is " +p4.getName()+" and it is   "+p4.getQuantity()+ "   units.");
+	}
+	if (p1.getQuantity() >= p2.getQuantity() & p1.getQuantity() >=p3.getQuantity() & p1.getQuantity() >=p4.getQuantity()) {
+		System.out.println("The biggest amount of product is " +p1.getQuantity()+" and it is   "+p1.getName()+ ".");
+	}
+	if (p2.getQuantity() >= p1.getQuantity() & p2.getQuantity() >=p3.getQuantity() & p2.getQuantity() >=p4.getQuantity()) {
+		System.out.println("The biggest amount of product is " +p2.getQuantity()+" and it is   "+p2.getName()+ ".");
+	}
+	if (p3.getQuantity() >= p1.getQuantity() & p3.getQuantity() >=p2.getQuantity() & p3.getQuantity() >=p4.getQuantity()) {
+		System.out.println("The biggest amount of product is " +p3.getQuantity()+" and it is   "+p3.getName()+ ".");
+	}
+	if (p4.getQuantity() >= p1.getQuantity() & p4.getQuantity() >=p2.getQuantity() & p4.getQuantity() >=p1.getQuantity()) {
+		System.out.println("The biggest amount of product is " +p4.getQuantity()+" and it is   "+p4.getName()+ ".");
+	}
+}
+}

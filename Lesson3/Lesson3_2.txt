@@ -1,0 +1,49 @@
+package lesson3;
+//Task 2
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ApllContinent {
+	public enum Continent {
+		AFRICA, ASIA, EUROPE, AMERICAS, AUSTRALIA
+		}
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+
+		 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        System.out.println("Enter a country");
+	        String country = br.readLine();
+	        Continent continent = Continent.EUROPE;
+	     switch (country) {
+	     case "Ukraine" :
+	     case "Latvia" :
+	     case "Austria":
+	    	 System.out.println("Continent: ");
+	    	continent = Continent.EUROPE; break;
+	     case "Iran" :
+	     case "Israel" :
+	     case "Turkey":	
+	    	 System.out.println("Continent: ");
+	    	continent = Continent.ASIA; break;
+	     case "Egypt" :
+		 case "Morocco" :
+		 case "Tunisia":	
+		     System.out.println("Continent: ");
+		    continent = Continent.AFRICA; break;
+		 case "Canada" :
+		 case "Mexico" :
+		 case "USA":	
+		     System.out.println("Continent: ");
+		    continent = Continent.AMERICAS; break;  
+		 case "Australia" :
+		 case "	New Zealand" :
+		     System.out.println("Continent: ");
+		    continent = Continent.AUSTRALIA; break;   
+		 default:
+				System.out.println("This country is not in the database ");
+				System.exit(0);
+	     }
+	     System.out.println(continent); 
+}
+}
