@@ -1,0 +1,36 @@
+package hw3;
+//Task2
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Maxandmin {
+	 public static void main(String[] args) throws NumberFormatException, IOException {
+
+		 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        System.out.println("Input a number1");
+	        int num1 = Integer.parseInt(br.readLine());
+	        System.out.println("Input a number2");
+	        int num2 = Integer.parseInt(br.readLine());
+	        System.out.println("Input a number3");
+	        int num3 = Integer.parseInt(br.readLine());
+	        if ((num1>num2) & (num1>num3)) {
+	        	 System.out.println("The first number is max, Max="+num1);
+	        }
+	        if ((num2>num1) & (num2>num3)) {
+	        	 System.out.println("Second number is max, Max="+num2);
+	        }
+	        if ((num3>num1) & (num3>num2)) {
+	        	 System.out.println("Third number is max, Max="+num3);
+	        }
+	        if ((num1<num2) & (num1<num3)) {
+	        	 System.out.println("The first number is min, Min="+num1);
+	        }
+	        if ((num2<num1) & (num2<num3)) {
+	        	 System.out.println("Second number is min, Min="+num2);
+	        }
+	        if ((num3<num1) & (num3<num2)) {
+	        	 System.out.println("Third number is min, Min="+num3);
+	        }
+}
+}

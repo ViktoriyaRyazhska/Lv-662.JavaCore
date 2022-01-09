@@ -1,0 +1,26 @@
+package hw3;
+//Task1
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Belongrange {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+
+		 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        System.out.println("Input a number1");
+	        float num1 = Float.parseFloat(br.readLine());
+	        System.out.println("Input a number2");
+	        float num2 = Float.parseFloat(br.readLine());
+	        System.out.println("Input a number3");
+	        float num3 = Float.parseFloat(br.readLine());
+	       
+			if((num1  >=-5) & (num1 <= 5) & (num2  >=-5) & (num2 <= 5) & (num3  >=-5) & (num3 <= 5)) {
+				System.out.println("All numbers belong to the range [-5,5]  ");
+			}
+		else {
+	         System.out.println("Not all numbers belong to the range [-5,5]");
+	        }
+
+}
+	}

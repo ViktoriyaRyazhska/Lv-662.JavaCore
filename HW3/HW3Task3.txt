@@ -1,0 +1,38 @@
+package hw3;
+//Task 3
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class HttpError {
+	public enum Error {
+		BAD_REQUEST, UNAUTHORIZED_ERROR, PAYMENT_REQUIRED, NOT_FOUND, FORBIDDEN
+		}
+	
+		public static void main(String[] args) throws NumberFormatException, IOException {
+
+			 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		        System.out.println("Enter an error number : 400, 401, 402, 403, 404");
+		        String number = br.readLine();
+		        Error error = Error.BAD_REQUEST;
+		     switch (number) {
+		     case "400" :
+		    	 System.out.println("Error---> ");
+		    	error = Error.BAD_REQUEST; break;
+		     case "401" :
+		    	 System.out.println("Error---> ");
+		    	error = Error.UNAUTHORIZED_ERROR; break;
+		     case "402" :
+		    	 System.out.println("Error---> ");
+		    	error = Error.PAYMENT_REQUIRED; break;
+		     case "403" :
+		    	 System.out.println("Error---> ");
+		    	error = Error.FORBIDDEN; break;
+		     case "404" :
+		    	 System.out.println("Error---> ");
+		    	error = Error.NOT_FOUND; break;
+		    	
+}
+		     System.out.println(error); 
+}
+}

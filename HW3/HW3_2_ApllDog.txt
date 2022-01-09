@@ -1,0 +1,55 @@
+package hw3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class ApllDog {
+ public enum Breed{
+	 AKITA, BEAGLE, BOXER
+ }
+ public static void main(String[] args) throws NumberFormatException, IOException {
+	 
+	 Dog d1 = new Dog("Rex", " AKITA", 6);
+	 Dog d2 = new Dog("Dollar", " BEAGLE", 3);
+	 Dog d3 = new Dog("Lucky", "BOXER", 8);
+	 	System.out.println(d1);
+	 	System.out.println(d2);
+	 	System.out.println(d3);
+	 if (d1.getAge() > d2.getAge() & d1.getAge() > d3.getAge()) {
+		 System.out.println("The oldest dog is : "+d1.getName()+". It has "+d1.getAge()+" years.");
+	 }
+	 if (d2.getAge() > d1.getAge() & d2.getAge() > d3.getAge()) {
+		 System.out.println("The oldest dog is : "+d2.getName()+". It has "+d2.getAge()+" years.");
+		 }
+	 if (d3.getAge() > d1.getAge() & d3.getAge() > d2.getAge()) {
+		 System.out.println("The oldest dog is : "+d3.getName()+". It has "+d3.getAge()+" years.");
+		 }
+	 System.out.print("Checking if there is no two dogs with the same name ---> ");
+	 System.out.println(d1.getName() == d2.getName() | d2.getName() == d3.getName() | d1.getName() ==d3.getName() );
+
+	 
+	 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("If you want know dog`s breed, enter a dog`s name!");
+        String name = br.readLine();
+        Breed breed = Breed.AKITA;
+ switch (name) {
+ 		case "Rex" :
+ 			System.out.println("Dogs breed is --->");
+ 				breed = Breed.AKITA; break;
+ 		case "Dollar" :
+ 			System.out.println("Dogs breed is --->");
+ 				breed = Breed.BEAGLE; break;
+ 		case "Lucky" :
+ 			System.out.println("Dogs breed is --->");
+ 				breed = Breed.BOXER; break;
+ 		default:
+ 			System.out.println("This name is not in the database ");
+ 			System.exit(0);
+	
+}
+ System.out.println(breed); 
+}
+}
+
