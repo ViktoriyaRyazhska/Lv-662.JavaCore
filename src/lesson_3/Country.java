@@ -28,7 +28,7 @@ public class Country {
 		case "Germany": case "United Kingdom": case "France":
 			continent = Continent.EUROPE; break;
 		case "Mexico": case "Canada": case "Cuba":
-		continent = Continent.NORTH_AMERICA; break;
+			continent = Continent.NORTH_AMERICA; break;
 		case "Samoa": case "Papua New Guinea": case "Guam":
 			continent = Continent.AUSTRALIA; break;
 		case "Peru": case "Chile": case "Bolivia":

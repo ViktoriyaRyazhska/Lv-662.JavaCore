@@ -2,42 +2,41 @@ package lesson_3_HW;
 
 public class Dog {
 	private String name;
-	private String breed;
 	private int age;
-	
+	Breed breed;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getBreed() {
-		return breed;
-	}
-	public void setBreed(String breed) {
-		this.breed = breed;
-	}
+
 	public int getAge() {
 		return age;
 	}
+
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Dog(String name, String breed, int age) {
-		super();
+
+	public Dog(String name, int age, Breed type) {
 		this.name = name;
-		this.breed = breed;
 		this.age = age;
-	}
-	public Dog() {
-		super();
+		breed = type;
 	}
 
-	public enum breed {
+	public Dog() {
+	}
+
+	public void setBreed(Breed breed) {
+	this.breed = breed;
+
+	}
+
+	public enum Breed {
 		Akita, Terrier, Spaniel
 	}
-	
 
-	}
-	
-
+}

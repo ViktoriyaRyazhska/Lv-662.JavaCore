@@ -27,7 +27,7 @@ public class Lesson_3_HW_task_1 {
 			System.out.println("Numbers do NOT belong to the range [-5,5] ");
 		}
 
-		// task1.1
+//		// task1.1
 		
 		double d = Math.min(a, b);
 		double e = Math.min(a, c);
@@ -38,9 +38,9 @@ public class Lesson_3_HW_task_1 {
 		double g = Math.max(a, c);
 		
 		System.out.println(Math.max(f, g) + " is the max value");
-		
-		// task1.2
-		
+//		
+//		// task1.2
+//		
 		System.out.println("Please enter the status code");
 		String t=br.readLine();
 		 
@@ -63,6 +63,11 @@ public class Lesson_3_HW_task_1 {
 		System.out.println(code);
 		
 		// task1.3
+		
+//		int n = 5, s = 4, v = 7;
+//		System.out.println(n > s && n > v || s < v);
+//		System.out.println((n < v || s > v) && n < s);
+
 		
 	}
 }
