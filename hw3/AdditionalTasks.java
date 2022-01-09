@@ -12,8 +12,10 @@ public class AdditionalTasks {
 		if (n == 0) return answer;
 		
 		while (power != 0) {
+			
 			answer *= x;
 			power -= 1;
+			
 		}
 		
 		if (n > 0) return answer;
@@ -26,14 +28,16 @@ public class AdditionalTasks {
 	   	
 	static double mySqrt(int x) {
 		
-		double guess;
+		double guess = 0;
 		
-		double root = x / 2;
+		double root = x / 2; 
 		
-		do {
+		while (guess != root) {
+			
 			guess = root;
 			root = (guess + x / guess) / 2;
-		} while (guess != root);
+			
+		} 
 		
 		return root;
 						        
@@ -47,9 +51,11 @@ public class AdditionalTasks {
 		StringBuilder title = new StringBuilder();
 		
 		while (number > 0) {
+			
 			number --;
 			title.insert(0, (char) (65 + number % 26));
 			number /= 26;
+			
 		}
 		
 		return title.toString();
@@ -59,7 +65,7 @@ public class AdditionalTasks {
 	public static void main(String[] args) {
 		
 		System.out.println(myPow(2, -1));
-		System.out.println(mySqrt(125));
+		System.out.println(mySqrt(30));
 		System.out.println(convertToTitle(27));
 
 	}
