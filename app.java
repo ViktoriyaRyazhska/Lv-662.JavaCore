@@ -9,5 +9,6 @@ public class app {
 		Kat.setfirstName("Kat");
 		Kat.input();
 		System.out.print(Kat);
+		System.out.print(Kat.getAge());
 	}
 }
