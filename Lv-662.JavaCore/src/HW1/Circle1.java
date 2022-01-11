@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Circle1 {
-	private Double getPerimeter(double a) throws IOException {
+	private double getPerimeter(double a) throws IOException {
 
 		double pi = 3.14;
 		return (2 * a * pi);
 	}
 
-	private Double getArea(double a) throws IOException {
+	private double getArea(double a) throws IOException {
 
 		double pi = 3.14;
 		return (pi * Math.pow(a, 2));
