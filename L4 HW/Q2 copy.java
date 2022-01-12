@@ -96,7 +96,6 @@ public class Q2 {
 		System.out.println("Please enter the third dog's breed:");
 		dog3.setBreed(br.readLine()); 
 		
-		//I'm not sure why this code isn't working it gives me false even when the names are identical
 		if ((dog1.getName().equals(dog2.getName())) ||
 		    (dog1.getName().equals(dog3.getName())) ||
 		    (dog3.getName().equals(dog2.getName())) ) {
