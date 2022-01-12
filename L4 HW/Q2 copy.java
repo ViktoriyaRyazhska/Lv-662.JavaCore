@@ -97,12 +97,12 @@ public class Q2 {
 		dog3.setBreed(br.readLine()); 
 		
 		//I'm not sure why this code isn't working it gives me false even when the names are identical
-		/*if ((dog1.getName() == dog2.getName()) ||
-		    (dog1.getName() == dog3.getName()) ||
-		    (dog3.getName() == dog2.getName())) {
+		if ((dog1.getName().equals(dog2.getName())) ||
+		    (dog1.getName().equals(dog3.getName())) ||
+		    (dog3.getName().equals(dog2.getName())) ) {
 			System.out.println("Error: some dogs have identical names");
 		}
-		*/
+		
 		
 		String oldestName = dog3.getName();
 		Breed oldestBreed = dog3.getBreed();
