@@ -5,10 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class EmployeeApp {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Scanner scan = new Scanner(System.in);
 
         Employee[] emp = new Employee[5];
 
@@ -19,7 +20,8 @@ public class EmployeeApp {
         emp[4] = new Employee("Maria Kondratyuk", 2, 300);
 
         // Show employees from certain department
-        int a = Integer.parseInt(br.readLine());
+        System.out.println("Please enter department number:");
+        int a = scan.nextInt();
         for (int i = 0; i < emp.length; i++) {
             if (emp[i].getDepartment_number() == a) {
                 System.out.print("\nEmployees from this department are: " + emp[i].getName());
