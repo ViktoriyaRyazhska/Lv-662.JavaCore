@@ -86,23 +86,31 @@ public class Employee {
 		case 3:
 			System.out.println(Arrays.toString(thirdDepartment));
 		}
-		
-		int sorting;
+
 		int[] salaries = {2830, 3200, 2550, 3250, 2440};
+		int[] salariesDesc = Arrays.stream(salaries).boxed()
+			    .sorted(Collections.reverseOrder())
+			    .mapToInt(Integer::intValue)
+			    .toArray();
+
+			System.out.println(Arrays.toString(salariesDesc));
 		
-		for (int i = 0; i < salaries.length; i ++) 
-		{
-			for (int j = i +1; j < salaries.length; j++)
-			{
-				if (salaries[i] < salaries[j])
-				{
-					sorting = salaries[i];
-					salaries[i] = salaries[j];
-					salaries[j] = sorting;
-				}
-			}
-		}
-		System.out.println(Arrays.toString(salaries));
+		// int sorting;
+		// int[] salaries = {2830, 3200, 2550, 3250, 2440};
+		
+		// for (int i = 0; i < salaries.length; i ++) 
+		// {
+		// 	for (int j = i +1; j < salaries.length; j++)
+		// 	{
+		// 		if (salaries[i] < salaries[j])
+		// 		{
+		// 			sorting = salaries[i];
+		// 			salaries[i] = salaries[j];
+		// 			salaries[j] = sorting;
+		// 		}
+		// 	}
+		// }
+		// System.out.println(Arrays.toString(salaries));
 		
 	}
 }
