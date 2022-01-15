@@ -17,7 +17,7 @@ public class Task_1 {
         emp[3] = new Employee("Diaz", 600, 3);
         emp[4] = new Employee("Silvi", 700, 5);
 
-        //System.out.println(emp[0].toString()); - display 1st element of array
+        //System.out.println(emp[0].toString());  display 1st element of array
 
         System.out.println("Please enter the Department number");
         int a = Integer.parseInt(br.readLine());
