@@ -4,6 +4,11 @@ public class Truck extends Car{
     int speed;
     int hours;
     int petrol;
+
+    public Truck(String model, int maxSpeed, int yearOfManufacture) {
+        super(model, maxSpeed, yearOfManufacture);
+    }
+
     @Override
     public double run() {
         return speed*hours;
@@ -11,6 +16,6 @@ public class Truck extends Car{
 
     @Override
     public double stop() {
-        return (speed*hours);
+        return hours*petrol;
     }
 }

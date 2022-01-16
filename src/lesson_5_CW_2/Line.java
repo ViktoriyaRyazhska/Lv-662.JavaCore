@@ -2,43 +2,40 @@ package lesson_5_CW_2;
 
 public class Line {
 
-    private int x;
-    private int y;
+    private Point point1;
+    private Point point2;
 
-    public int getX() {
-        return x;
+    public Line(Point point1, Point point2) {
+        this.point1 = point1;
+        this.point2 = point2;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public Point getPoint1() {
+        return point1;
     }
 
-    public int getY() {
-        return y;
+    public void setPoint1(Point point1) {
+        this.point1 = point1;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public Point getPoint2() {
+        return point2;
     }
 
-    Point p1 = new Point(4, 5);
-    Point p2 = new Point(6, 5);
-
-    public Line(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public void setPoint2(Point point2) {
+        this.point2 = point2;
     }
 
     @Override
     public String toString() {
         return "Line{" +
-                "x=" + x +
-                ", y=" + y +
+                "point1=" + point1 +
+                ", point2=" + point2 +
                 '}';
     }
 
-    public void print() {
-        System.out.println("This is line and x = " + getX() + " y = " + getY());
+    public String print() {
+        return "This is line with points " + point1 + " and " + point2;
     }
 }
 

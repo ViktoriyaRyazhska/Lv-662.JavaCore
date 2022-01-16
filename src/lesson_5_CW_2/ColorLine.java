@@ -1,7 +1,7 @@
 package lesson_5_CW_2;
 
 public class ColorLine extends Line {
-   private String Color;
+    private String Color;
 
     public String getColor() {
         return Color;
@@ -11,10 +11,11 @@ public class ColorLine extends Line {
         Color = color;
     }
 
-    public ColorLine(int x, int y, String color) {
-        super (x, y);
+    public ColorLine(Point point1, Point point2, String color) {
+        super(point1, point2);
         Color = color;
     }
+
 
     @Override
     public String toString() {
@@ -23,7 +24,9 @@ public class ColorLine extends Line {
                 '}';
     }
 
-    public void print() {
-        System.out.println("This is Line with color " + getColor());
+    public String print() {
+        return super.print() + " + color of this line is " + Color;
     }
+
+
 }
