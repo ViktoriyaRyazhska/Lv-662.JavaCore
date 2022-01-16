@@ -3,6 +3,7 @@ package lesson_5_CW;
 public class Sedan extends Car {
     int speed;
     int hours;
+    int petrol;
 
     @Override
     public double run() {
@@ -11,6 +12,6 @@ public class Sedan extends Car {
 
     @Override
     public double stop() {
-        return 0;
+        return hours*petrol;
     }
 }

@@ -1,7 +1,9 @@
 package lesson_5_CW;
 
 public class Appl {
+
     public static void main(String[] args) {
+
         Car[] cars = new Car[4];
         cars[0] = new Truck();
         cars[0].setModel("mazda");
@@ -22,6 +24,11 @@ public class Appl {
 
         for (int i = 0; i < cars.length; i++) {
             System.out.println(cars[i].toString());
+        }
+
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i].run());
+            System.out.println(cars[i].stop());
         }
     }
 }

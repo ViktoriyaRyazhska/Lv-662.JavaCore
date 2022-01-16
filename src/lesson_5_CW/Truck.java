@@ -11,8 +11,6 @@ public class Truck extends Car{
 
     @Override
     public double stop() {
-        return (speed*hours)/petrol;
+        return (speed*hours);
     }
-
-
 }
