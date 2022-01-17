@@ -2,10 +2,10 @@ package l7P2;
 
 public class Line {
 	
-	public int x;
-	public int y;
+	public Point x;
+	public Point y;
 	
-	public Line(int x, int y) {
+	public Line(Point x, Point y) {
 		this.x = x;
 		this.y = y;
 	}
