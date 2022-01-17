@@ -1,0 +1,6 @@
+package PracticeFive;
+
+public interface Animal {
+    void voice();
+    void feed();
+}
