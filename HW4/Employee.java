@@ -46,71 +46,34 @@ public class Employee {
 		System.out.println("Please, enter the department number");
 		int  departmentNumber = Integer.parseInt(br.readLine());
 
+		Employee[] employees = new Employee[5];
+		employees[0] = new Employee ("Tonny", 2, 2830);
+		employees[1] = new Employee ("Jim", 1, 3200);
+		employees[2] = new Employee ("Ross", 2, 2550);
+		employees[3] = new Employee ("Kolin", 3, 3250);
+		employees[4] = new Employee ("Ben", 3, 2440);
 		
-		Employee e1 = new Employee();
-		e1.setName("Tonny");
-		e1.setDepartmentNumber(2);
-		e1.setSalary(2830);
-		
-		Employee e2 = new Employee();
-		e2.setName("Jim");
-		e2.setDepartmentNumber(1);
-		e2.setSalary(3200);
-		
-		Employee e3 = new Employee();
-		e3.setName("Ross");
-		e3.setDepartmentNumber(2);
-		e3.setSalary(2550);
-		
-		Employee e4 = new Employee();
-		e4.setName("Kolin");
-		e4.setDepartmentNumber(3);
-		e4.setSalary(3250);
-		
-		Employee e5 = new Employee();
-		e5.setName("Ben");
-		e5.setDepartmentNumber(3);
-		e5.setSalary(2440);
-		
-		String[] firstDepartment = {"Jim"};
-		String[] secondDepartment = {"Tonny", "Ross"};
-		String[] thirdDepartment = {"Kolin", "Ben"};
-		
-		switch (departmentNumber) {
-		case 1:
-			System.out.println(Arrays.toString(firstDepartment));
-			break;
-		case 2:
-			System.out.println(Arrays.toString(secondDepartment));
-			break;
-		case 3:
-			System.out.println(Arrays.toString(thirdDepartment));
+		for (int i = 0; i < employees.length; i++) {
+			if (employees[i].getDepartmentNumber() ==  departmentNumber) {
+			System.out.println(employees[i].getName());
+			}
 		}
-
-		int[] salaries = {2830, 3200, 2550, 3250, 2440};
-		int[] salariesDesc = Arrays.stream(salaries).boxed()
-			    .sorted(Collections.reverseOrder())
-			    .mapToInt(Integer::intValue)
-			    .toArray();
-
-			System.out.println(Arrays.toString(salariesDesc));
+		System.out.println();
 		
-		// int sorting;
-		// int[] salaries = {2830, 3200, 2550, 3250, 2440};
-		
-		// for (int i = 0; i < salaries.length; i ++) 
-		// {
-		// 	for (int j = i +1; j < salaries.length; j++)
-		// 	{
-		// 		if (salaries[i] < salaries[j])
-		// 		{
-		// 			sorting = salaries[i];
-		// 			salaries[i] = salaries[j];
-		// 			salaries[j] = sorting;
-		// 		}
-		// 	}
-		// }
-		// System.out.println(Arrays.toString(salaries));
+		Employee sorting;
+		for (int i = 0; i < employees.length; i++) {
+			for (int j = 0; j < employees.length; j++) {
+				if (employees[i].salary > employees[j].salary) {
+					sorting = employees[i];
+					employees[i] = employees[j];
+					employees[j] = sorting;
+				}
+			}
+		}
+		System.out.println("Salaries in descending order are: ");
+		for (int i = 0; i < employees.length; i++) {
+		System.out.println( employees[i].getSalary() + ", belongs to " +  employees[i].name);
+		}
 		
 	}
 }
