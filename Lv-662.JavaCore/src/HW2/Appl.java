@@ -1,15 +1,19 @@
 package HW2;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Appl {
 	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		Person p1 = new Person();
-		p1.input();
+		p1.input(br);
 
 		Person p2 = new Person();
-		p2.input();
+		p2.input(br);
 
 		Person p3 = new Person("Sergiy", "Kotsubynskyi");
 		p3.changeName("Vikroya", "Pauk");

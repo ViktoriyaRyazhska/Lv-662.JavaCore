@@ -2,12 +2,11 @@ package HW2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.time.LocalDate;
 
 public class Person {
 
-	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	
 	
 	private static int count = 0;
 	{
@@ -30,7 +29,7 @@ public class Person {
 		return LocalDate.now().getYear() - this.birthYear;
 	}
 
-	public void input() throws IOException {
+	public void input(BufferedReader br) throws IOException {
 		System.out.println("Enter your name *(person No)  " + count + ": ");
 		this.firstName = br.readLine();
 		System.out.println("Enter your surname *(person No)  " + count + ": ");
