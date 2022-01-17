@@ -5,8 +5,8 @@ public class Penguin extends NonFlyingBird {
         super(feathers, layEggs);
     }
 
-//    @Override
-//    public String toString() {
-//        return "Penguin{}";
-//    }
+    @Override
+    public String toString() {
+        return "Penguin: " + super.toString();
+    }
 }

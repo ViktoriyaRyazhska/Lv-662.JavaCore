@@ -8,6 +8,8 @@ abstract public class Bird {
     private int layEggs;
 
     public Bird(String feathers, int layEggs) {
+        this.feathers = feathers;
+        this.layEggs = layEggs;
     }
 
     public abstract String fly(); // abstarct method fly()
@@ -38,10 +40,7 @@ abstract public class Bird {
 
     @Override
     public String toString() {
-        return "Bird{" +
-                "feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
-                '}';
+        return "feathers = " + feathers + ", layEggs = " + layEggs + ";";
     }
 }
 

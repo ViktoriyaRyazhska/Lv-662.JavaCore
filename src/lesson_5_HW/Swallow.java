@@ -7,7 +7,7 @@ public class Swallow extends FlyingBird {
 
     @Override
     public String toString() {
-        return "Swallow{}";
+        return "Swallow: " + super.toString();
     }
 
 }

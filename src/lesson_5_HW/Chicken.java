@@ -8,7 +8,6 @@ public class Chicken extends NonFlyingBird {
 
     @Override
     public String toString() {
-        return "Chicken{}";
+        return "Chicken: " + super.toString();
     }
-
 }
