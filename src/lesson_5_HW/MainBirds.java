@@ -12,10 +12,7 @@ public class MainBirds {
             System.out.println(birds[i]);
         }
 
-        for (int i = 0; i < birds.length; i++) {
-            int count = i+1;
-           // System.out.println("The bird number " + count + " is " + birds[i].fly());
-        }
+
 
 
     }

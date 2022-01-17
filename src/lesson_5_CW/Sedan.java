@@ -5,8 +5,11 @@ public class Sedan extends Car {
     int hours;
     int petrol;
 
-    public Sedan(String model, int maxSpeed, int yearOfManufacture) {
+    public Sedan(String model, int maxSpeed, int yearOfManufacture, int hours, int petrol, int speed) {
         super(model, maxSpeed, yearOfManufacture);
+        this.hours = hours;
+        this.petrol = petrol;
+        this.speed = speed;
     }
 
     @Override
