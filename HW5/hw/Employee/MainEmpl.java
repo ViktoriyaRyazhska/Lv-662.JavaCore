@@ -11,8 +11,11 @@ public class MainEmpl {
 		employees[3] = new Employee("Max", 25, 31447.8);
 		
 		for (int i = 0; i < employees.length; i++) {
-			System.out.println("Name: " + employees[i].getName() + ". Age: " + employees[i].getAge() + ". Position: " + ". Salary: " + employees[i].getSalary());
+			// System.out.println("Name: " + employees[i].getName() + ". Age: " + employees[i].getAge() + ". Position: " + ". Salary: " + employees[i].getSalary());
+
+			System.out.println(employees[i].report());		
 		}
+
 		
 	}
 
