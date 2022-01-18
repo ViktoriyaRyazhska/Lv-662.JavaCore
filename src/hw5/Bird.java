@@ -1,4 +1,4 @@
-package hw2.hw5;
+package hw5;
 
 public abstract class Bird {
     private String feather;

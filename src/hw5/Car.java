@@ -1,4 +1,4 @@
-package hw2.hw5;
+package hw5;
 
 //Create abstract class Car with model,
 // maxSpeed and yearOfManufacture properties and run() and stop() methods.

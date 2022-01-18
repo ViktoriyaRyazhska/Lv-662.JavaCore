@@ -1,4 +1,4 @@
-package hw2.hw5;
+package hw5;
 
 class Developer extends Employee {
     private String position;

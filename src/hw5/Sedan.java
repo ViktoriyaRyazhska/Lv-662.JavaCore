@@ -1,4 +1,4 @@
-package hw2.hw5;
+package hw5;
 
 //Develop classes Truck and Sedan which extend class Car.
 public class Sedan extends Car {
