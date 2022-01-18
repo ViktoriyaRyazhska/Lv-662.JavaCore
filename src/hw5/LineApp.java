@@ -1,4 +1,4 @@
-package hw5;
+package hw2.hw5;
 
 public class LineApp {
     public static void main(String[] args) {

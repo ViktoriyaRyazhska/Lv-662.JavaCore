@@ -1,4 +1,4 @@
-package hw5;
+package hw2.hw5;
 
 class Line {
     private Point point1;
