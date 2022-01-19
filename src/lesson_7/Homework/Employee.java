@@ -1,6 +1,6 @@
 package lesson_7.Homework;
 
-abstract public class Employee {
+abstract public class Employee implements Payment {
     private int employeeld;
     private int hours;
     private String name;

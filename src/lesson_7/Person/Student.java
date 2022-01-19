@@ -8,10 +8,9 @@ public class Student extends Person{
         super(name);
     }
 
-
     @Override
     public void print() {
-        System.out.println("I am " + Type_Person);
+        System.out.println("I am " + Type_Person + ", my name is " + getName());
 
     }
 }

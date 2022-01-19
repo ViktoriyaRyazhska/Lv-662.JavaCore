@@ -8,7 +8,7 @@ public class Main {
 
         lines[0] = new Line(line1, line2);
         lines[1] = new ColorLine(line1, line2, "yellow");
-
+        //lines[0] = new Line(new Point(3,4), new Point(3,5));
 
         for (int i = 0; i < lines.length; i++) {
             System.out.println(lines[i].print());

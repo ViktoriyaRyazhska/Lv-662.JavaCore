@@ -10,11 +10,15 @@ public class PersonMain {
 
 
         for (int i = 0; i < person.length; i++) {
-            person[i].print();
             if (person[i] instanceof Staff) {
-                System.out.println(((Staff) person[i]).Salary());
+                person[i].print();
+                System.out.println("My salary is " + ((Staff) person[i]).Salary());
+
+            } else {
+                person[i].print();
             }
         }
+
 
 
     }

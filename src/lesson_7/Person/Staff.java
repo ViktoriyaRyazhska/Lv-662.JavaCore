@@ -14,11 +14,4 @@ abstract public class Staff extends Person {
 
     public abstract int Salary();
 
-    @Override
-    public String toString() {
-        return "Staff: " +
-                "hours=" + hours +
-                ", rate=" + rate +
-                ", name='" + name;
-    }
 }

@@ -11,10 +11,15 @@ public class EmployeeApp {
         employees[3] = new SalariedEmployee("TO78011", 2100, 1287, 46, "Glen");
 
         for (int i = 0; i < employees.length; i++) {
-          System.out.println(employees[i].calculatePay());
+            System.out.println(employees[i]);
+          System.out.println("My pay is " + employees[i].calculatePay());
         }
 
+        Arrays.sort(employees);
 
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println(employees[i]);
+        }
 
 
     }
