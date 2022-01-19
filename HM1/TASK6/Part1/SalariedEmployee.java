@@ -62,4 +62,9 @@ public class SalariedEmployee extends Employee implements Payment{
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Name " + name + " Salary " + calculatePay();
+    }
 }

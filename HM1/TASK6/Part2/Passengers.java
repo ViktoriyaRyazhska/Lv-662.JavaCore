@@ -4,8 +4,6 @@ public abstract class Passengers {
 
     private int passenger ;
 
-    private  Passengers();
-
     public int getPassenger() {
         return passenger;
     }

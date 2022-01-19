@@ -36,4 +36,9 @@ public class ContractEmployee extends Employee implements Payment{
         this.federalTaxIdMember = federalTaxIdMember;
     }
 
+    @Override
+    public String toString(){
+        return "Name " + name + " Salary " + calculatePay();
+    }
 }
+

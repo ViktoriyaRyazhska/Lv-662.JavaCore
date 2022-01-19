@@ -2,7 +2,7 @@ package Task_6HM.Part1;
 
 import java.util.Arrays;
 
-public class Employee {
+public abstract class Employee implements Payment {
 
     //fields
     private String employeeld;
@@ -23,4 +23,8 @@ public class Employee {
     public void setEmployeeld(String employeeld) {
         this.employeeld = employeeld;
     }
+
+    @Override
+    public abstract String toString();
+
 }
