@@ -1,6 +1,8 @@
 package lesson_7.Homework;
 
-abstract public class Employee implements Payment {
+import java.util.Comparator;
+
+abstract public class Employee implements Payment, Comparable<Employee>{
     private int employeeld;
     private int hours;
     private String name;
@@ -11,6 +13,11 @@ abstract public class Employee implements Payment {
         this.hours = hours;
         this.name = name;
     }
+
+    public int compareTo(Employee e) {
+        return this.calculatePay() - e.calculatePay();
+    }
+
 
     public int getEmployeeld() {
         return employeeld;

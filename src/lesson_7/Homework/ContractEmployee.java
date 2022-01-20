@@ -18,8 +18,9 @@ public class ContractEmployee extends Employee implements Payment {
 
     @Override
     public String toString() {
-        return "ContractEmployee: " +
-                "federalTaxIdmember='" + federalTaxIdmember + '\'' +
-                ", hourly_rate=" + hourly_rate + super.toString();
+        return "ContractEmployee: Id " + getEmployeeld() + ", Name " + getName() + ", "
+                + ", fixed_monthly_payment=" + calculatePay();
     }
+
+
 }

@@ -1,6 +1,8 @@
 package lesson_7.Homework;
 
-public class SalariedEmployee extends Employee implements Payment{
+import java.util.Comparator;
+
+public class SalariedEmployee extends Employee implements Payment {
 
     private String socialSecurityNumber;
     private int fixed_monthly_payment;
@@ -19,8 +21,9 @@ public class SalariedEmployee extends Employee implements Payment{
 
     @Override
     public String toString() {
-        return "SalariedEmployee: " +
-                "socialSecurityNumber='" + socialSecurityNumber + '\'' +
-                ", fixed_monthly_payment=" + fixed_monthly_payment + super.toString();
+        return "SalariedEmployee: Id " + getEmployeeld() + ", Name " + getName() + ", "  +
+                "fixed_monthly_payment=" + fixed_monthly_payment;
     }
+
+
 }
