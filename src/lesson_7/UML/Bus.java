@@ -4,9 +4,9 @@ public class Bus extends GroundVehicle{
 
     private String route;
 
-
-    public Bus(int passengers) {
+    public Bus(int passengers, String route) {
         super(passengers);
+        this.route = route;
     }
 
     public String getRoute() {

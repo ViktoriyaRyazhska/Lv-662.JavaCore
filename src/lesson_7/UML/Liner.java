@@ -4,8 +4,9 @@ public class Liner extends WaterVehicle {
 
     private int floors;
 
-    public Liner(int passengers) {
+    public Liner(int passengers, int floors) {
         super(passengers);
+        this.floors = floors;
     }
 
     @Override

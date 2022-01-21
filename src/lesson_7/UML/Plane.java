@@ -3,10 +3,11 @@ package lesson_7.UML;
 public class Plane extends FlyingVehicle {
     private int maxDistance;
 
-    public Plane(int passengers) {
-        super(passengers);
-    }
 
+    public Plane(int passengers, int maxDistance) {
+        super(passengers);
+        this.maxDistance = maxDistance;
+    }
 
     @Override
     public void fly() {

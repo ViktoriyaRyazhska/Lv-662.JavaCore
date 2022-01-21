@@ -4,8 +4,9 @@ public class Car extends GroundVehicle{
 
     private String model;
 
-    public Car(int passengers) {
+    public Car(int passengers, String model) {
         super(passengers);
+        this.model = model;
     }
 
     public String getModel() {
