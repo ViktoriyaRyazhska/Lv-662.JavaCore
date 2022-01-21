@@ -3,17 +3,44 @@ package lesson_7.Homework;
 public class ContractEmployee extends Employee implements Payment {
 
     private String federalTaxIdmember;
-    int hourly_rate;
+    private int hourly_rate;
+    private int hours;
 
-    public ContractEmployee(String federalTaxIdmember, int hourly_rate, String name, int hours, int employeeld) {
-        super (employeeld, hours, name);
+    public String getFederalTaxIdmember() {
+        return federalTaxIdmember;
+    }
+
+    public void setFederalTaxIdmember(String federalTaxIdmember) {
         this.federalTaxIdmember = federalTaxIdmember;
+    }
+
+    public int getHourly_rate() {
+        return hourly_rate;
+    }
+
+    public void setHourly_rate(int hourly_rate) {
         this.hourly_rate = hourly_rate;
     }
 
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
+
+    public ContractEmployee(int employeeld, String name, String federalTaxIdmember, int hourly_rate, int hours) {
+        super(employeeld, name);
+        this.federalTaxIdmember = federalTaxIdmember;
+        this.hourly_rate = hourly_rate;
+        this.hours = hours;
+    }
+
+
     @Override
     public int calculatePay() {
-        return hourly_rate*getHours();
+        return getHourly_rate()*getHours();
     }
 
     @Override
@@ -21,6 +48,8 @@ public class ContractEmployee extends Employee implements Payment {
         return "ContractEmployee: Id " + getEmployeeld() + ", Name " + getName() + ", "
                 + ", fixed_monthly_payment=" + calculatePay();
     }
+
+
 
 
 }

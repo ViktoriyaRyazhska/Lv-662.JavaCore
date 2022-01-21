@@ -4,18 +4,16 @@ import java.util.Comparator;
 
 abstract public class Employee implements Payment, Comparable<Employee>{
     private int employeeld;
-    private int hours;
     private String name;
 
 
-    public Employee(int employeeld, int hours, String name) {
+    public Employee(int employeeld, String name) {
         this.employeeld = employeeld;
-        this.hours = hours;
         this.name = name;
     }
 
     public int compareTo(Employee e) {
-        return this.calculatePay() - e.calculatePay();
+        return e.calculatePay() - this.calculatePay();
     }
 
 
@@ -27,12 +25,12 @@ abstract public class Employee implements Payment, Comparable<Employee>{
         this.employeeld = employeeld;
     }
 
-    public int getHours() {
-        return hours;
-    }
-
-    public void setHours(int hours) {
-        this.hours = hours;
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeld=" + employeeld +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     public String getName() {
@@ -43,13 +41,6 @@ abstract public class Employee implements Payment, Comparable<Employee>{
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "employeeld=" + employeeld +
-                ", hours=" + hours +
-                ", name='" + name + '\'' +
-                '}';
-    }
+
 
 }

@@ -7,9 +7,8 @@ public class SalariedEmployee extends Employee implements Payment {
     private String socialSecurityNumber;
     private int fixed_monthly_payment;
 
-    public SalariedEmployee(String socialSecurityNumber, int fixed_monthly_payment,
-                            int employeeld, int hours, String name) {
-        super(employeeld, hours, name);
+    public SalariedEmployee(int employeeld, String name, String socialSecurityNumber, int fixed_monthly_payment) {
+        super(employeeld, name);
         this.socialSecurityNumber = socialSecurityNumber;
         this.fixed_monthly_payment = fixed_monthly_payment;
     }

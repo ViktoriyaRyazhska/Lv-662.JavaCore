@@ -9,11 +9,10 @@ import java.util.Comparator;
 public class EmployeeApp {
     public static void main(String[] args) {
         Employee[] employees = new Employee[4];
-        employees[0] = new ContractEmployee("FId134", 20, "Rosa", 40, 4567);
-        employees[1] = new ContractEmployee("F409", 30, "Bianka", 36, 190);
-        employees[2] = new SalariedEmployee("TO15788", 3400, 4113, 44, "Philip");
-        employees[3] = new SalariedEmployee("TO78011", 2100, 1287, 46, "Glen");
-
+        employees[0] = new ContractEmployee(45900, "Rosa", "SN1287", 40, 40);
+        employees[1] = new ContractEmployee(45900, "Bianka", "SN0087", 50, 20);
+        employees[2] = new SalariedEmployee(78014, "Philip", "TO1287", 5090);
+        employees[3] = new SalariedEmployee(78011, "Glen", "TO1287", 4500);
 
 // Descending sorting
 //        Employee temp;
