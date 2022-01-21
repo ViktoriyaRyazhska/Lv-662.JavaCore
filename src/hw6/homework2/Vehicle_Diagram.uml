@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>hw6.homework2</OriginalElement>
+  <nodes>
+    <node x="514.4833333333333" y="171.0">hw6.homework2.FlyingVehicle</node>
+    <node x="926.925" y="46.5">hw6.homework2.Vehicle</node>
+    <node x="374.00000000000006" y="319.0">hw6.homework2.Plane</node>
+    <node x="1016.5" y="182.0">hw6.homework2.GroundedVehicle</node>
+    <node x="0.0" y="330.0">hw6.homework2.Boat</node>
+    <node x="599.0" y="330.0">hw6.homework2.Helicopter</node>
+    <node x="1221.0" y="330.0">hw6.homework2.Car</node>
+    <node x="108.48333333333335" y="182.0">hw6.homework2.WaterVehicle</node>
+    <node x="808.0" y="330.0">hw6.homework2.Motorcycle</node>
+    <node x="1018.0" y="330.0">hw6.homework2.Bus</node>
+    <node x="191.00000000000006" y="330.0">hw6.homework2.Liner</node>
+    <node x="203.3083333333334" y="0.0">hw6.homework2.Passengers</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="hw6.homework2.GroundedVehicle" target="hw6.homework2.Passengers" relationship="GENERALIZATION">
+      <point x="-46.5" y="-38.0" />
+      <point x="1063.0" y="151.0" />
+      <point x="301.3083333333334" y="151.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="hw6.homework2.Bus" target="hw6.homework2.GroundedVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="hw6.homework2.GroundedVehicle" target="hw6.homework2.Vehicle" relationship="REALIZATION">
+      <point x="46.5" y="-38.0" />
+      <point x="1156.0" y="141.0" />
+      <point x="980.425" y="141.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="hw6.homework2.WaterVehicle" target="hw6.homework2.Passengers" relationship="GENERALIZATION">
+      <point x="-40.00000000000003" y="-38.0" />
+      <point x="148.48333333333335" y="151.0" />
+      <point x="301.3083333333334" y="151.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="hw6.homework2.Helicopter" target="hw6.homework2.FlyingVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="693.5" y="294.0" />
+      <point x="594.4833333333333" y="294.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="hw6.homework2.FlyingVehicle" target="hw6.homework2.Vehicle" relationship="REALIZATION">
+      <point x="40.0" y="-49.0" />
+      <point x="634.4833333333333" y="141.0" />
+      <point x="980.425" y="141.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="hw6.homework2.Plane" target="hw6.homework2.FlyingVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-82.5" />
+      <point x="476.50000000000006" y="294.0" />
+      <point x="594.4833333333333" y="294.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="hw6.homework2.Boat" target="hw6.homework2.WaterVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="85.5" y="294.0" />
+      <point x="188.48333333333335" y="294.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="hw6.homework2.Car" target="hw6.homework2.GroundedVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="1313.5" y="294.0" />
+      <point x="1109.5" y="294.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="hw6.homework2.WaterVehicle" target="hw6.homework2.Vehicle" relationship="REALIZATION">
+      <point x="39.99999999999997" y="-38.0" />
+      <point x="228.48333333333335" y="141.0" />
+      <point x="980.425" y="141.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="hw6.homework2.Motorcycle" target="hw6.homework2.GroundedVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="903.0" y="294.0" />
+      <point x="1109.5" y="294.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="hw6.homework2.FlyingVehicle" target="hw6.homework2.Passengers" relationship="GENERALIZATION">
+      <point x="-40.0" y="-49.0" />
+      <point x="554.4833333333333" y="151.0" />
+      <point x="301.3083333333334" y="151.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="hw6.homework2.Liner" target="hw6.homework2.WaterVehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="272.50000000000006" y="294.0" />
+      <point x="188.48333333333335" y="294.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="703.0" y="242.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
