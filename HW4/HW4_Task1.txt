@@ -1,0 +1,20 @@
+package hw4;
+//Task 1
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+public class DayOfMounth {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		int[] arr = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31} ;
+		System.out.println(Arrays.toString(arr));
+		System.out.println("Enter mounth number 1- 12");
+		 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		 int i =Integer.parseInt(br.readLine());
+		
+		System.out.println("Mounth has "+arr[i-1]+" days");
+			
+		
+}
+	}

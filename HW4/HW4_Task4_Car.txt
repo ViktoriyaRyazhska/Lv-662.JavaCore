@@ -1,0 +1,43 @@
+package hw4;
+
+public class Car {
+	private String name;
+	private int year;
+	private double engineCapacity;
+
+	public Car(String name, int year, double engineCapacity) {
+	this.name=name;
+	this.year=year;
+	this.engineCapacity=engineCapacity;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setEngineCapacity(double engineCapacity) {
+		this.engineCapacity = engineCapacity;
+	}
+
+	public double getEnginCapacity() {
+		return engineCapacity;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [ Name =" + name + ", Year= " + year + ", Engine capacity " + engineCapacity + "]";
+	}
+	
+}
