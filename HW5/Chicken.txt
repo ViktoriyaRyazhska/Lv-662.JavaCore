@@ -1,0 +1,12 @@
+package hw5;
+
+public class Chicken extends NonFlyingBird{
+	@Override
+	public void feathers () {
+        System.out.println("Has little yellow feathers");}
+        
+        @Override
+        public void layEggs() {
+            System.out.println("Lay  big eggs");}
+   
+}

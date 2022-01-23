@@ -1,0 +1,12 @@
+package hw5;
+
+public class NonFlyingBird extends Bird {
+	 @Override
+	    public void fly() {
+	        System.out.println("Non Flying birds!!!");
+	    }
+	 @Override
+		public String toString() {
+			return "Information about BIRDS";
+		}
+}

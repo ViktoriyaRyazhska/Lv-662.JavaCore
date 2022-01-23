@@ -1,0 +1,15 @@
+package hw5;
+
+public abstract class Bird {
+	public void feathers () {
+        System.out.println("Has feathers");
+    }
+
+    public void layEggs() {
+        System.out.println("Can layEggs");
+    }
+    public void fly() {
+        System.out.println("Can fly or not?");
+    }
+	
+}

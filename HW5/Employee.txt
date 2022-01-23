@@ -1,0 +1,45 @@
+package hw5;
+
+public class Employee {
+	
+	@Override
+	public String toString() {
+		return "Empl [name=" + name + ",age " + age +", salary= " +salary+"]";
+	}
+private String name;
+private int age;
+private double salary;
+
+
+	public Employee(String name, int age, double salary) {
+this.name=name;
+this.age=age;
+this.salary=salary;
+
+}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setAge(int age) {
+		this.age= age;
+	}
+
+	public int getAge() {
+		return age;
+	}
+	public void setSalaty(double salary) {
+		this.salary = salary;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+	
+	
+}
