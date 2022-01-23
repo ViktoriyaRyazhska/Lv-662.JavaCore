@@ -1,0 +1,8 @@
+package lesson5;
+
+abstract public class Car {
+		protected String color="green";
+public void print(){
+	System.out.println("This is car");
+}
+}

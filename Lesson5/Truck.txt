@@ -1,0 +1,15 @@
+package lesson5;
+
+public class Truck extends Car {
+	int maxSpeed =110;
+	int yearOfManufacture =2018;
+	String model = "Scania";
+	@Override
+	public String toString() {
+		return "Truck max Speed "+ maxSpeed +" km/h  "+yearOfManufacture +" year, "+ model+" "+color+ "-color" ;
+	}
+	@Override
+	public void print(){
+		System.out.println("This is Truck");
+}
+}

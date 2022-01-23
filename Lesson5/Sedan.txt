@@ -1,0 +1,15 @@
+package lesson5;
+
+public class Sedan extends Car{
+	int maxSpeed =180;
+	int yearOfManufacture=2017;
+	String model = "Nissan";
+	@Override
+	public String toString() {
+		return "Sedan max Speed "+ maxSpeed+" km/h  "+yearOfManufacture+" year, "+ model+" "+color+ "-color" ;
+	}
+	@Override
+	public  void print(){
+		System.out.println("This is Sedan");
+}
+}
