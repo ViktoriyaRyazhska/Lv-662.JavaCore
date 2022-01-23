@@ -1,8 +1,16 @@
 package lesson_8.HomeWork1;
 
 abstract public class Person {
-    FullName fullName;
+    private FullName fullName;
     private int age;
+
+    public FullName getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(FullName fullName) {
+        this.fullName = fullName;
+    }
 
     public int getAge() {
         return age;

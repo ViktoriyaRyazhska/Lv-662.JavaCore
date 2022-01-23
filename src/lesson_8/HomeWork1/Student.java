@@ -4,6 +4,14 @@ public class Student extends Person{
 
     private int field;
 
+    public int getField() {
+        return field;
+    }
+
+    public void setField(int field) {
+        this.field = field;
+    }
+
     public Student(FullName fullName, int age, int field) {
         super(fullName, age);
         this.field = field;
@@ -16,7 +24,7 @@ public class Student extends Person{
 
     @Override
     public String info() {
-        return "First name: " + fullName.getFirstName() + ", " +
-                "Last name: " + fullName.getLastName() + ", " + "Age: " + getAge();
+        return "First name: " + getFullName().getFirstName() + ", Last name: " + getFullName().getLastName()
+                + ", Age: " + getAge() + ", Field: " + getField();
     }
 }
