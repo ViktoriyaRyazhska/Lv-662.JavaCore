@@ -25,11 +25,4 @@ public class FullName {
         this.lastName = lastName;
     }
 
-    @Override
-    public String toString() {
-        return "FullName{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
-    }
 }
