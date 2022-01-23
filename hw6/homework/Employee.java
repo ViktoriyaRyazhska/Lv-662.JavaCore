@@ -27,7 +27,7 @@ public abstract class Employee implements Payment, Comparable<Employee> {
 	}
 	
 	@Override
-  public int compareTo(Employee employee) {
+	public int compareTo(Employee employee) {
 		return this.calculatePay() - employee.calculatePay();
 	} 	
 		
