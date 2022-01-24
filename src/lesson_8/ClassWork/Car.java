@@ -11,9 +11,6 @@ public class Car {
     private int passengerCapacity;
     private boolean isAirConditioning;
 
-
-
-
     private Car() {
 
     }
@@ -29,9 +26,9 @@ public class Car {
              Car1 =  new Car();
          }
 
-         public Car build(){
-             return Car1;
-         }
+//         public Car build(){
+//             return Car1;
+//         }
 
         public CarBuilder addModel(String addModel){
             Car1.model = addModel;
