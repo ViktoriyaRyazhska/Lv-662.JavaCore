@@ -23,6 +23,7 @@ public class Task_2 {
         System.out.println("Please enter ID");
         int y = Integer.parseInt(br.readLine());
 
+  //      System.out.println(employeeMap.getOrDefault(y,"no such id"));
 
         if (employeeMap.containsKey(y)) {
             System.out.println(employeeMap.get(y));
