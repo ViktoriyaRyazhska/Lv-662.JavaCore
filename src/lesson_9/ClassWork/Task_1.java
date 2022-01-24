@@ -7,16 +7,17 @@ import java.util.List;
 public class Task_1 {
 
     public static void main(String[] args) {
-        List<Integer> myCollection = new ArrayList<>();
+        List<Integer> myCollection = new ArrayList<> (10);
         myCollection.add(4);
         myCollection.add(8);
-        myCollection.add(49);
-        myCollection.add(34);
-        myCollection.add(24);
+        myCollection.add(4);
+        myCollection.add(3);
+        myCollection.add(2);
         myCollection.add(4);
         myCollection.add(1);
         myCollection.add(3);
-        myCollection.add(23);
+        myCollection.add(2);
+        myCollection.add(4);
         myCollection.add(45);
 
         List <Integer> newCollection = new ArrayList<>();
@@ -56,7 +57,7 @@ public class Task_1 {
                 myCollection.add(5, -4);
             }
         }
-
+        System.out.println(myCollection);
 
         for (int i = 0; i < myCollection.size(); i++) {
             System.out.println("position – " + i +  ", value of element – " + myCollection.get(i));
