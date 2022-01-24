@@ -8,7 +8,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int birthYear;
-    private int age;
+
 
 
     public Person() {
@@ -44,9 +44,7 @@ public class Person {
     }
 
     public int getAge () {
-        age = LocalDate.now().getYear() - birthYear;
-        return age;
-
+        return  = LocalDate.now().getYear() - birthYear;
 
     }
 

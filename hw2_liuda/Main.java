@@ -17,6 +17,7 @@ public class Main {
 
 
 
+
         person1.input(br);
         person2.input(br);
         person3.input(br);
