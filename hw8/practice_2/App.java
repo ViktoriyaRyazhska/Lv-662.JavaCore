@@ -33,6 +33,7 @@ public class App {
 		
 		System.out.print("Please enter employee name: ");
 		String name = reader.readLine();
+		reader.close();
 		
 		if (employeeMap.containsValue(name)) {
 			
