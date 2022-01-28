@@ -1,6 +1,5 @@
 package hw8.homework_3;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -45,7 +44,7 @@ public class Student {
 	
 	public static void sortByName(List<Student> students){
 		
-		Collections.sort(students, new Comparator<Student>() {
+		students.sort(new Comparator<Student>() {
 
 			@Override
 			public int compare(Student s1, Student s2) {
@@ -57,7 +56,7 @@ public class Student {
 	
 	public static void sortByCourse(List<Student> students) {
 		
-		Collections.sort(students, new Comparator<Student>() {
+		students.sort(new Comparator<Student>() {
 
 			@Override
 			public int compare(Student s1, Student s2) {
