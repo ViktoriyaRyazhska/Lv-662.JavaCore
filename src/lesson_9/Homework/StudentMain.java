@@ -21,8 +21,10 @@ public class StudentMain {
         Collections.sort(Info, NameComparator);
         System.out.println(Info);
 
-        Info.sort(Comparator.comparing(Student::getCourse));
+        StudentCourseComparator CourseComparator = new StudentCourseComparator();
+        Collections.sort(Info, CourseComparator);
         System.out.println(Info);
+
 
 // Sorting by Name and then by Course:
 //        Info.sort(Comparator.comparing(Student::getName)
