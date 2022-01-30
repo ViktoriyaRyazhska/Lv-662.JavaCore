@@ -23,5 +23,10 @@ public class Homework_Task_3 {
         Matcher m = p.matcher(sum);
         System.out.println(m.matches());
 
+        while (m.find()) {
+            System.out.println(sum.substring(m.start(), m.end()));
+        }
+
+
     }
 }

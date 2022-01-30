@@ -13,16 +13,13 @@ public class Practical_Task_2 {
         //name
         //name, middle name and last name
         System.out.println("Task 2");
-        System.out.println("Hello. What is your surname?");
-        String surname = br.readLine();
-        System.out.println("What is your name?");
+        System.out.println("Hello. Please enter your surname, name and patronymic");
         String name = br.readLine();
-        System.out.println("Please enter also your patronymic. Thanks!");
-        String patronymic = br.readLine();
 
-        String one = "Your surnames and initials are " + surname + " " + name.charAt(0) + ". " + patronymic.charAt(0) + ".";
+        String[] wordsArr = name.split(" ");
+        String one = "Your surnames and initials are " + wordsArr[0] + " " + wordsArr[1].charAt(0) + ". " + wordsArr[2].charAt(0) + ".";
         System.out.println(one);
-        System.out.println("Your name is " + name);
-        System.out.println(name + " " + patronymic + " " + surname);
+        System.out.println("Your name is " + wordsArr[1]);
+        System.out.println(wordsArr[1] + " " + wordsArr[2] + " " + wordsArr[0]);
     }
 }
