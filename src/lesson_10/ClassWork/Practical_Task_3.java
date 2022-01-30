@@ -51,6 +51,6 @@ public class Practical_Task_3 {
         for (int i = 0; i < Names.size(); i++) {
             System.out.println(RegularExpression(Names.get(i)));
         }
-        
+
     }
 }
