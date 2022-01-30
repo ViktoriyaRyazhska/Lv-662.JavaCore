@@ -1,21 +1,28 @@
 package Task_7HM.Task1;
 
-public abstract class Person {
+public abstract class Person extends FullName{
 
-    //fields
-    FullName fullName;
-    int age;
+    private int Age;
 
-    //constructor
-
-    public Person(FullName fullName, int age) {
-        this.fullName = fullName;
-        this.age = age;
+    Person(FullName fullName, int Age){
+        super(fullName.getFirstName(), fullName.getLastName());
+        this.setFirstName(fullName.getFirstName());
+        this.setLastName(fullName.getLastName());
+        this.setAge();
     }
 
-    //method
+    public void info(){
+        System.out.println("Person first name is " + this.getFirstName());
+        System.out.println("Person last name is " + this.getLastName());
+        System.out.println("Person Age is " + getAge());
+    }
 
-  //  public FullName getFullName() {
-    //    return "FirstName:   <firstName>   , Lastname: <lastname>"
-   // }
+    public abstract String activity();
+
+    public int getAge(){
+        return this.Age;
+    }
+    public  void setAge(){
+        this.Age = Age;
+    }
 }
