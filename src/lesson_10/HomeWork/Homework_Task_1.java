@@ -33,7 +33,7 @@ public class Homework_Task_1 {
         //bring the second word in reverse order
         StringBuilder sb = new StringBuilder(wordsArr[1]);
         System.out.println("" + sb.reverse());
-        
+
 
     }
 }
