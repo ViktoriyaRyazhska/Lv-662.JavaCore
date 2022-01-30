@@ -18,7 +18,7 @@ public class Homework_Task_3 {
        System.out.println("Please enter the sentance");
         String sum = br.readLine();
 
-        String pattern = ("\\$(\\d*)(\\.\\d{2})");
+        String pattern = ("\\$(\\d+)(\\.\\d{2})");
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(sum);
         System.out.println(m.matches());
