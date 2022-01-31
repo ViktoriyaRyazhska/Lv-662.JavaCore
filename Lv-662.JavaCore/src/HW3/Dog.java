@@ -2,18 +2,17 @@ package HW3;
 
 import java.util.Objects;
 
-
 public class Dog {
 
 	private String name;
 	private int age;
 	Breed breed;
-	
+
 	public Dog(String name, int age, Breed type) {
 		this.name = name;
 		this.age = age;
 		breed = type;
-		
+
 	}
 
 	public String getName() {
@@ -32,6 +31,14 @@ public class Dog {
 		this.age = age;
 	}
 
+	public Breed getBreed() {
+		return breed;
+	}
+
+	public void setBreed(Breed breed) {
+		this.breed = breed;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(name);
@@ -48,9 +55,5 @@ public class Dog {
 		Dog other = (Dog) obj;
 		return Objects.equals(name, other.name);
 	}
-	
-	//Display the name and the kind of the oldest dog. 
-	
-	//public (max)
 
 }
