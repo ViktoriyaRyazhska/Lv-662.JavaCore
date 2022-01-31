@@ -32,8 +32,12 @@ public class App {
 		
 		System.out.println("The longest (or one of) word in the sentence is: " + longest);
 		System.out.println("It has " + longest.length() + " letters.");
-		StringBuilder b = new StringBuilder(words.get(1));
-		System.out.println("Here is the second word in reverse order: " + b.reverse());
+		try {
+			StringBuilder b = new StringBuilder(words.get(1));
+			System.out.println("Here is the second word in reverse order: " + b.reverse());
+		} catch (IndexOutOfBoundsException e) {
+			System.out.println("Your sentence is too short.");
+		}
 		
 		System.out.println();
 		System.out.println("--- Homework Task 2 ---");
@@ -48,10 +52,16 @@ public class App {
 		p = Pattern.compile("\\$\\d*\\.\\d{2}");
 		m = p.matcher(text);
 		
+		int count = 0;
 		while (m.find()) {
 			System.out.println("Match found: " + m.group(0));
+			count++;
 		}
 		
+		if (count == 0) {
+			System.out.println("No matches found.");
+		}
+				
 		reader.close();
 		
 	}
