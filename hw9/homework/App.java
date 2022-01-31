@@ -43,7 +43,7 @@ public class App {
 		System.out.println("--- Homework Task 2 ---");
 		System.out.print("Enter a sentence for space optimization: ");
 		sentence = reader.readLine();
-		System.out.println("Optimized sentence: " + optimizeSpaces(sentence));
+		System.out.println("Optimized sentence: " + sentence.replaceAll(" +", " "));
 			
 		System.out.println();
 		System.out.println("--- Homework Task 3 ---");
@@ -65,17 +65,5 @@ public class App {
 		reader.close();
 		
 	}
-	
-	public static String optimizeSpaces(String s) {
 		
-		Pattern p = Pattern.compile("[^ ]+");
-		Matcher m = p.matcher(s);
-		StringBuilder b = new StringBuilder();
-		while (m.find()) {
-			b.append(m.group(0) + " ");
-		}
-		b.deleteCharAt(b.length() - 1);
-		return b.toString();
-	}
-
 }
