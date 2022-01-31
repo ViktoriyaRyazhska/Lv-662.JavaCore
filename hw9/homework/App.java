@@ -64,6 +64,7 @@ public class App {
 		while (m.find()) {
 			b.append(m.group(0) + " ");
 		}
+		b.deleteCharAt(b.length() - 1);
 		return b.toString();
 	}
 
