@@ -15,13 +15,12 @@ public class Homework_Task_3 {
         // Enter the text from the console that contains several occurrences of US currency.
         // Display all occurrences on the screen.
 
-       System.out.println("Please enter the sentance");
+       System.out.println("Please enter the text");
         String sum = br.readLine();
 
         String pattern = ("\\$\\d+\\.\\d{2}");
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(sum);
-        System.out.println(m.matches());
 
         while (m.find()) {
             System.out.println(sum.substring(m.start(), m.end()));
