@@ -6,12 +6,12 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class Main {
-
+public int x = 0;
     public static void main(String[] args) throws IOException {
         ////////////// 1 //////////////
+        System.out.println(x);
 
-
-        int[] daysInEachMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+  /*      int[] daysInEachMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
        // System.out.println(Arrays.toString(daysInEachMonth));
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -117,4 +117,6 @@ public class Main {
         System.out.println(Arrays.toString(cars));
 
     }
+    */
+
 }
