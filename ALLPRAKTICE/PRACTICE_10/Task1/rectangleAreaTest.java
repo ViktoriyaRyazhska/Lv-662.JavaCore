@@ -9,6 +9,6 @@ class rectangleAreaTest {
     @Test
     void squareRectangle() {
        rectangleArea.squareRectangle(10,5);
-       assertEquals(50,50);
+       assertEquals(50,rectangleArea.squareRectangle(10,5));
     }
 }

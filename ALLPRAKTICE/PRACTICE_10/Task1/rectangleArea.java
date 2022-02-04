@@ -8,8 +8,7 @@ public class rectangleArea {
     public static int squareRectangle(int a , int b){
         if (b < 0 | a < 0){
             throw new ArithmeticException();
-        }else {
-            return a * b ;
         }
+            return a * b ;
     }
 }
