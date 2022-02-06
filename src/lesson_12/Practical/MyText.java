@@ -5,6 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -61,12 +62,20 @@ public class MyText {
         }
         System.out.println("The shortest row has " + shortestString + " symbols " + "and the number of row is " + indexS);
 
-        //count and write the number of symbols in every line
-
+        //find and write only that lines, which consist of word «Sun»
+        List<String> matches = new ArrayList<String>();
+        for (String str : LineList) {
+            if (str.contains("Sun")) {
+                matches.add(str);
+                System.out.println(matches);
+            }
+        }
 
     }
 
 }
+
+
 
 
 
