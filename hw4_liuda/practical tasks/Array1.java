@@ -1,4 +1,4 @@
-package prTask5p1;
+package prTask4p1;
 
 public class Array1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package prTask5p2;
+package prTask4p2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
