@@ -1,0 +1,8 @@
+Responsible for developing applications and software using the Java programming language,
+these specialized programmers collaborate with fellow software engineers, web developers, 
+and others to use Java for developing business applications, websites and more.
+
+They are active throughout the entire development life cycle of a product or solution. 
+They are capable of identifying and analyzing any problems that come up and crafting 
+efficient solutions. Depending on what’s needed, employers look for both entry-level and 
+senior Java developers

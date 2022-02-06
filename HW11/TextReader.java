@@ -10,7 +10,7 @@ public class TextReader {
 	
 	public static void main(String[] args) {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("/Users/Lili/Svit.txt"));
+			BufferedReader br = new BufferedReader(new FileReader("/Users/Lili/Lv-662.JavaCore/HW11/Svit.txt"));
 			ArrayList<String> row = new ArrayList<>();
 			String s;
 			while ((s = br.readLine()) != null) {
