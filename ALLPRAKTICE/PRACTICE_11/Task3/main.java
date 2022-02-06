@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         try {
-            Scanner sc = new Scanner(new File("D:\\game\\javavavavavv\\IntelliJ IDEA Community Edition 2021.2.1\\1\\src\\Task_11Praktice\\Task3\\myText.txt"));
+            Scanner sc = new Scanner(new File("src/Task_11Praktice/Task3/myText.txt"));
             String text = sc.useDelimiter("\\A").next();
             sc.close();
             String[] arr = text.split("\\r");
@@ -30,7 +30,7 @@ public class main {
               consistVar = (arr[i].contains("var"))? arr[i] : null ;
            }
             System.out.println("\n The longest line is : " + longer + " [" + longer.length() + "] ");
-            System.out.println("\n The Shorter line si : " + shorter + " [" + shorter.length() + "] ");
+            System.out.println("\n The Shorter line is : " + shorter + " [" + shorter.length() + "] ");
             System.out.println("\n The line witch contains <<var>>  : " + consistVar);
         }catch (IOException e){
             System.err.println(e.getMessage());
