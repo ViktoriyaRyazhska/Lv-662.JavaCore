@@ -1,4 +1,4 @@
-package hw9.homework1;
+package hw6.hw9.homework1;
 
 public class FiveWords {
     public static void main(String[] args) {

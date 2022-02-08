@@ -1,4 +1,4 @@
-package hw9.homework3;
+package hw6.hw9.homework3;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

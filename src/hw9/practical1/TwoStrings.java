@@ -1,4 +1,4 @@
-package hw9.practical1;
+package hw6.hw9.practical1;
 
 import java.util.Scanner;
 

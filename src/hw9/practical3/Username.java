@@ -1,4 +1,4 @@
-package hw9.practical3;
+package hw6.hw9.practical3;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

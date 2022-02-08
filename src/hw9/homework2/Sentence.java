@@ -1,4 +1,4 @@
-package hw9.homework2;
+package hw6.hw9.homework2;
 
 public class Sentence {
     public static void main(String[] args) {
