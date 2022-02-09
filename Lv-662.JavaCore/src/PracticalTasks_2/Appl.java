@@ -23,7 +23,7 @@ public class Appl {
 		System.out.println(Employee.getTotalSum() + " $");
 
 		// Total salary with bonuses
-		System.out.println("\nTotal salary of all employees with bonuses is:\n" + ((e1.getSalary() + e1.getBonuses())
+		System.out.println("\nTotal salary of all employees with bonuses is:\n" + (float)((e1.getSalary() + e1.getBonuses())
 				+ (e2.getSalary() + e2.getBonuses()) + (e3.getSalary() + e3.getBonuses())) + " $");
 
 	}
