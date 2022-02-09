@@ -17,27 +17,17 @@ public class Reader_Writer {
         BufferedReader br = null;
         BufferedWriter bw = null;
         String s = null;
+        int countLines = 0;
         int count = 0;
 
         ArrayList<String> LineList = new ArrayList<>();
+        ArrayList<Integer> NumberOfChars = new ArrayList<>();
+
         try {
             br = new BufferedReader(new FileReader(fileName));
-            bw = new BufferedWriter(new FileWriter(fileNameTwo));
             while ((s = br.readLine()) != null) {
+                //Read context from file into array of strings
                 LineList.add(s);
-                ++count;
-                //   System.out.println("row " + ++count + " read:" + s);
-
-                int largestString = LineList.get(0).length();
-                for (int i = 0; i < LineList.size(); i++) {  // Test which String is the largest
-                    if (LineList.get(i).length() > largestString) {
-                        largestString = LineList.get(i).length();
-                    }
-                    bw.write("number of lines in file1.txt is "
-                            + count + "\n" + "the longest line in file1.txt " + LineList.get(i)
-                            + "My name is Myroslava, and BD is on 25th of July");
-                }
-
             }
             br.close();
         } catch (FileNotFoundException e) {
@@ -45,6 +35,38 @@ public class Reader_Writer {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        // count rows
+        for (int i = 0; i < LineList.size(); i++) {
+            countLines++;
+        }
+        //convert rows from LineList to NumberOfChars (rows without spaces)
+        for (int i = 0; i < LineList.size(); i++) {
+            NumberOfChars.add(LineList.get(i).replace(" ", "").length());
+        }
+        // find the largest row in List (without spaces)
+        int largestString = NumberOfChars.get(0);
+        int indexL = 0;
+        int index = 0;
+        for (int i = 0; i < NumberOfChars.size(); i++) {
+            if (NumberOfChars.get(i) > largestString) {
+                largestString = NumberOfChars.get(i);
+                indexL = i + 1;
+                index = i;
+            }
+        }
+
+        try {
+            bw = new BufferedWriter(new FileWriter(fileNameTwo));
+            bw.write("The number of lines in file1.txt " + String.valueOf(countLines));
+            bw.write("\n" + "The longest line in file1.txt. is " + String.valueOf(indexL)
+                    + ": " + LineList.get(index));
+            bw.write("\nMy name is Myrosia and my BD is on July, the 25th");
+
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }
+

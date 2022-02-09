@@ -1,0 +1,3 @@
+The number of lines in file1.txt 2
+The longest line in file1.txt. is 2: I am eager to start my career as test automation trainee :)
+My name is Myrosia and my BD is on July, the 25th
