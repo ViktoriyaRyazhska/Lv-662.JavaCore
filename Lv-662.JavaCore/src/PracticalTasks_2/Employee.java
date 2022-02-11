@@ -1,5 +1,6 @@
 package PracticalTasks_2;
 
+
 public class Employee {
 	private static float totalSum = 0;
 
@@ -10,15 +11,16 @@ public class Employee {
 	public Employee() {
 	}
 
-	public Employee(String name, int rate) {
+	public Employee(String name, int r) {
 		this.name = name;
-		this.rate = rate;
+		this.rate = r;
 	}
 
-	public Employee(String name, int rate, int hours) {
-		this.name = name;
-		this.rate = rate;
-		this.hours = hours;
+	public Employee(String n, int r, int h) {
+		this.name = n;
+		this.rate = r;
+		this.hours = h;
+		totalSum += this.getSalary();
 	}
 
 	public String getName() {
@@ -33,20 +35,23 @@ public class Employee {
 		return rate;
 	}
 
-	public void setRate(int rate) {
-		this.rate = rate;
+	public void setRate(int r) {
+		totalSum -= this.getSalary();
+		this.rate = r;
+		totalSum += this.getSalary();
 	}
 
 	public int getHours() {
 		return hours;
 	}
 
-	public void setHours(int hours) {
-		this.hours = hours;
+	public void setHours(int h) {
+		totalSum -= this.getSalary();
+		this.hours = h;
+		totalSum += this.getSalary();
 	}
 
-	public double getSalary() {
-		totalSum += rate * hours;
+	public float getSalary() {
 		return rate * hours;
 	}
 
@@ -54,14 +59,18 @@ public class Employee {
 		return totalSum;
 	}
 
-	public void changeRate(int rate) {
-		totalSum -= this.rate;
-		this.rate = rate;
-		totalSum += rate;
+	public void changeRate(int r) {
+		totalSum -= this.getSalary();
+		this.rate = r;
+		totalSum += this.getSalary();
 	}
 
-	public double getBonuses() {
-		return getSalary() * 0.1;
+	public float getBonuses() {
+		return (float) (getSalary() * 0.1);
+	}
+	
+	public float getSalaryWithBonuses() {
+		return getSalary() + getBonuses();
 	}
 
 	@Override
