@@ -1,0 +1,4 @@
+Number of lines in file1 is 11.
+The longest line in file1 is:
+"While some people are lucky enough to just know what they want to do and end up in satisfying careers without giving it much thought, most of us are not."
+Oleksandr V Riabko (21.12.79)

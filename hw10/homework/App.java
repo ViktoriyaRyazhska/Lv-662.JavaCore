@@ -57,8 +57,8 @@ public class App {
 		try {
 			reader.close();
 		} catch (IOException e) {
-			System.err.println("Failed to close bufferedreader.");
-			e.printStackTrace();
+			System.err.println("Failed to close bufferedreader. Forsing exit...");
+			System.exit(0);
 		}
 				
 	}
