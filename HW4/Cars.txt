@@ -1,0 +1,233 @@
+package lecture5;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Cars {
+	private String type;
+	private int year;
+	private double engine;
+
+	public Cars(String type, int year, double engine) {
+		this.type = type;
+		this.year = year;
+		this.engine = engine;
+	}
+
+	public Cars() {
+
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public double getEngine() {
+		return engine;
+	}
+
+	public void setEngine(double engine) {
+		this.engine = engine;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	@Override
+	public String toString() {
+
+		return "Car type is " + type + "production year "+ year + "engine capacity " + engine;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		Cars[] cars = new Cars[4];
+		cars[0] = new Cars("Electric", 1999, 3.70);
+		cars[1] = new Cars("Hybrid", 2005, 2.50);
+		cars[2] = new Cars("Petrol", 2007, 3.40);
+		cars[3] = new Cars("Diesel", 2015, 4.95);
+
+		System.out.println("Please enter the year of production");
+
+		int a = Integer.parseInt(br.readLine());
+		for (int i = 0; i < cars.length; i++) {
+			if (cars[i].getYear() == a) {
+				System.out.println(cars[i].toString());
+			}
+		}
+
+		Cars sort;
+
+  for (int i = 0; i < (cars.length - 1 ); i++) {
+    for (int j = 0; j < cars.length - i - 1; j++) {
+      if (cars[j].getYear() > cars[j+1].getEngine()) 
+      {
+         sort = cars[j];
+         cars[j] = cars[j+1];
+         cars[j+1] = sort;
+      }
+    }
+  }
+
+  System.out.println("Apackage lecture5;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Cars {
+	private String type;
+	private int year;
+	private double engine;
+
+	public Cars(String type, int year, double engine) {
+		this.type = type;
+		this.year = year;
+		this.engine = engine;
+	}
+
+	public Cars() {
+
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public double getEngine() {
+		return engine;
+	}
+
+	public void setEngine(double engine) {
+		this.engine = engine;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	@Override
+	public String toString() {
+
+		return "Car type is " + type + "production year "+ year + "engine capacity " + engine;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		Cars[] cars = new Cars[4];
+		cars[0] = new Cars("Electric", 1999, 3.70);
+		cars[1] = new Cars("Hybrid", 2005, 2.50);
+		cars[2] = new Cars("Petrol", 2007, 3.40);
+package lecture5;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Cars {
+	private String type;
+	private int year;
+	private double engine;
+
+	public Cars(String type, int year, double engine) {
+		this.type = type;
+		this.year = year;
+		this.engine = engine;
+	}
+
+	public Cars() {
+
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public double getEngine() {
+		return engine;
+	}
+
+	public void setEngine(double engine) {
+		this.engine = engine;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	@Override
+	public String toString() {
+
+		return "Car type is " + type + "production year "+ year + "engine capacity " + engine;
+	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		Cars[] cars = new Cars[4];
+		cars[0] = new Cars("Electric", 1999, 3.70);
+		cars[1] = new Cars("Hybrid", 2005, 2.50);
+		cars[2] = new Cars("Petrol", 2007, 3.40);
+		cars[3] = new Cars("Diesel", 2015, 4.95);
+
+		System.out.println("Please enter the year of production");
+
+		int a = Integer.parseInt(br.readLine());
+		for (int i = 0; i < cars.length; i++) {
+			if (cars[i].getYear() == a) {
+				System.out.println(cars[i].toString());
+			}
+		}
+
+		Cars sort;
+
+  for (int i = 0; i < (cars.length - 1 ); i++) {
+    for (int j = 0; j < cars.length - i - 1; j++) {
+      if (cars[j].getYear() > cars[j+1].getEngine()) 
+      {
+         sort = cars[j];
+         cars[j] = cars[j+1];
+         cars[j+1] = sort;
+      }
+    }
+  }
+
+  System.out.println("Ascending order by year:");
+
+  for (int i = 0; i < cars.length; i++) 
+    System.out.println(cars[i]);
+}
+}
+
+  for (int i = 0; i < cars.length; i++) 
+    System.out.println(cars[i]);
+}
+}

@@ -1,0 +1,6 @@
+package lecture7;
+
+public interface Payment {
+	public double calculatePay();
+
+}

@@ -1,0 +1,15 @@
+package l3;
+
+public class Appl5 {
+	public static void main(String[] args) {
+		Employee [] employee = new Employee[4];
+		employee[0] = new Employee ("Vova Ivanov", 32, 32.456);
+		employee [1] = new Employee ("Katya Sapranova", 28, 28.980);
+		employee [2] = new Developer ("Olia Kuznets", 25, 31.500, "UX deisgner");
+		employee [3] = new Developer ("Pavlo Borodin", 23, 45.100, "Cloud developer");
+		
+		for (Employee i : employee ) {
+			System.out.println(i.toReport());
+		}
+	}
+}

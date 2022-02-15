@@ -1,0 +1,38 @@
+package lecture7;
+
+public class Employee implements Payment, Comparable<Employee> {
+	public String employeeId;
+	public int avaragePay;
+	
+
+	public Employee(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	@Override
+	public double calculatePay() {
+		return 0;
+	}
+	
+	@Override   
+	public int compareTo(Employee i) {        
+		if (this.employeeId.compareTo(i.employeeId) != 0 )          
+			return this.employeeId.compareTo(i.employeeId);       
+		else            
+			return Integer.compare(this.avaragePay, i.avaragePay);    
+		}
+	
+}

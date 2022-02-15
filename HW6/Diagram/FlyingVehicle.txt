@@ -1,0 +1,16 @@
+package lecture7;
+
+abstract public class FlyingVehicle extends Passengers implements Vehicle {
+
+	public FlyingVehicle(int passengers) {
+		super(passengers);
+
+	}
+
+	protected void fly() {
+
+	}
+	protected void land() {
+		
+	}
+}

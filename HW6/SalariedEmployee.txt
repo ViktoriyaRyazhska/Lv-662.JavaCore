@@ -1,0 +1,24 @@
+package lecture7;
+
+public class SalariedEmployee extends Employee implements Payment {
+
+	public String SociaSecurityNumber;
+	public int hourlyRate;
+	public int hoursWorked;
+	public int avaragePay;
+	
+	public SalariedEmployee (String employeeId,String SociaSecurityNumber, int hourlyRate, int hoursWorked) {
+		super (employeeId); this.SociaSecurityNumber = SociaSecurityNumber;
+		this.hourlyRate = hourlyRate;
+		this.hoursWorked = hoursWorked;
+	}
+	@Override
+	public double calculatePay() {
+		return avaragePay = hourlyRate * hoursWorked;
+	}
+	@Override
+	public String toString() {
+		return "Employee ID is: " + employeeId + "Socia Security Number: " + SociaSecurityNumber + avaragePay;
+	}
+
+}

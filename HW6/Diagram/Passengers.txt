@@ -1,0 +1,17 @@
+package lecture7;
+
+public class Passengers {
+	private int passengers;
+	
+	public Passengers ( int passengers) {
+	}
+
+	private int getPassengers() {
+		return passengers;
+	}
+
+	private void setPassengers(int passengers) {
+		this.passengers = passengers;
+	}
+ 
+	}

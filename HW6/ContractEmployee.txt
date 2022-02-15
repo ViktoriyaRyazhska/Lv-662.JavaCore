@@ -1,0 +1,22 @@
+package lecture7;
+
+public class ContractEmployee extends Employee implements Payment {
+
+	public String federalTaxIdmember;
+	public int fixedMonthlyPayment;
+	public int avaragePay;
+	
+	public ContractEmployee(String employeeId, String federalTaxIdmember, int fixedMonthlyPayment) {
+		super(employeeId); this.federalTaxIdmember = federalTaxIdmember;
+		this.fixedMonthlyPayment=fixedMonthlyPayment;
+	}
+	
+	@Override
+	public double calculatePay() {
+		return avaragePay = fixedMonthlyPayment;
+	}
+	@Override
+	public String toString() {
+		return "Employee ID: " + employeeId + "Federal Tax Id: " + federalTaxIdmember + avaragePay;
+	}
+}

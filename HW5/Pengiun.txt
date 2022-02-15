@@ -1,0 +1,17 @@
+package l3;
+
+public class Pengiun extends NonFlyingBird {
+
+	public Pengiun(String feathers, String layEggs) {
+		super(feathers, layEggs);
+
+	}
+
+	@Override
+	public String toString() {
+		return "Pengiun has the following features: " + super.toString();
+	}
+
+
+
+}

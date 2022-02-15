@@ -1,0 +1,28 @@
+package lecture7;
+
+import java.util.Arrays;
+
+public class Appl1 {
+
+	public static void main(String[] args) {
+		Employee[] employee = new Employee[4];
+		employee[0] = new SalariedEmployee("BH1380", " FD1455", 60, 20);
+		employee[1] = new SalariedEmployee("VG7689", " OP8765", 80, 30);
+		employee[2] = new ContractEmployee("NB3760", " TR1200", 6000);
+		employee[3] = new ContractEmployee("VD0170", " EW1599", 4560);
+
+		for (Employee i : employee) {
+			System.out.println(i.calculatePay());
+		}
+
+		for (Employee i : employee) {
+			System.out.println(i);
+		}
+
+		Arrays.sort(employee);
+		for (Employee i : employee) {
+			System.out.println(i);
+		}
+	}
+
+}

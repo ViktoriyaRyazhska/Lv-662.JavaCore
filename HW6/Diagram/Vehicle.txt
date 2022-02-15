@@ -1,0 +1,5 @@
+package lecture7;
+
+public interface Vehicle {
+
+}

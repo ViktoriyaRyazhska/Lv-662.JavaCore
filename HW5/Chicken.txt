@@ -1,0 +1,16 @@
+package l3;
+
+public class Chicken extends NonFlyingBird {
+
+	public Chicken(String feathers, String layEggs) {
+		super(feathers, layEggs);
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Chicken has the following features: " + super.toString();
+	}
+
+
+}

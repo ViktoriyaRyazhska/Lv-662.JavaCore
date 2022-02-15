@@ -1,0 +1,15 @@
+package l3;
+
+public class NonFlyingBird extends Bird {
+
+
+	public NonFlyingBird(String feathers, String layEggs) {
+		super(feathers, layEggs);
+	}
+
+	@Override
+	public String toFly() {
+		return "This is a non flying bird";
+	}
+
+}
