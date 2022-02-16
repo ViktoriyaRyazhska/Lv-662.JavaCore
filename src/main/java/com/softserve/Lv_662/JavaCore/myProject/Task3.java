@@ -1,4 +1,4 @@
-package Lecture14;
+package com.softserve.Lv_662.JavaCore.myProject;
 
 public class Task3 {
 

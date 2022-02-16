@@ -1,4 +1,4 @@
-package PracticalTask;
+package com.softserve.Lv_662.JavaCore.myProject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
