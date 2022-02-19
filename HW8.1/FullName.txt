@@ -1,0 +1,27 @@
+package l7;
+
+public class FullName {
+	String FirstName;
+	String LastName;
+
+	public String getFirstName() {
+		return FirstName;
+	}
+
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
+
+	public FullName(String FirstName, String LastName) {
+		this.FirstName = FirstName;
+		this.LastName = LastName;
+	}
+}

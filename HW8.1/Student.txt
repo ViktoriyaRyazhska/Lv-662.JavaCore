@@ -1,0 +1,22 @@
+package l7;
+
+public class Student extends Person {
+	int course;
+
+	public Student(FullName fullName, int age, int course) {
+		super(fullName, age);
+		this.course = course;
+	}
+
+	@Override
+	public String activity() {
+		return "I study at university";
+	}
+
+	@Override
+	public String info() {
+		return "First name: " + getFullName().getFirstName() + ", Last name: " + getFullName().getLastName() + ", Age: "
+				+ getAge() + ", Course: " + course;
+	}
+
+}
