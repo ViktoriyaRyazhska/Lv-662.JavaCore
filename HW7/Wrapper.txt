@@ -1,0 +1,31 @@
+package l7;
+
+public class Wrapper<T> {
+
+	private T value;
+
+	public void set(T value) {
+		this.value = value;
+	}
+
+	public T get() {
+		return value;
+	}
+
+	public static void main(String[] args) {
+		Wrapper<Integer> integer = new Wrapper<Integer>();
+		integer.set(10);
+
+		Wrapper<String> string = new Wrapper<String>();
+		string.set("This is a wrapper for the string");
+
+		Wrapper<Boolean> boolean1 = new Wrapper<Boolean>();
+		boolean1.set(true);
+
+		System.out.println(integer.get());
+		System.out.println(string.get());
+		System.out.println(boolean1.get());
+
+	}
+
+}
