@@ -1,0 +1,71 @@
+package lesson8;
+
+import java.time.LocalDate;
+
+public class Car {
+	private String model;
+	private LocalDate dateOfProduction;
+	private double engineCapacity;
+	private String color;
+	private int passengerCapacity;
+	private boolean isAirConditioning;
+
+	@Override
+	public String toString() {
+		return "CAR: Model " + model + " Date" + " dateOfProduction" + dateOfProduction + "Engin" + engineCapacity
+				+ "Color" + color + "Passenger" + passengerCapacity + "Air" + isAirConditioning;
+	}
+
+	private Car() {
+
+	}
+
+	public static CarBuilder getCar() {
+		return new Car().new CarBuilder();
+	}
+
+	class CarBuilder {
+		public CarBuilder addModel(String addModel) {
+			Car.this.model = addModel;
+			return this;
+		}
+
+		public CarBuilder addDateOfProduction(LocalDate addDateOfProduction) {
+			Car.this.dateOfProduction = addDateOfProduction;
+			return this;
+		}
+
+		public CarBuilder addEngineCapacity(double addEngineCapacity) {
+			Car.this.engineCapacity = addEngineCapacity;
+			return this;
+		}
+
+		public CarBuilder addColor(String addColor) {
+			Car.this.color = addColor;
+			return this;
+		}
+
+		public CarBuilder addPassengerCapacity(int addPassengerCapacity) {
+			Car.this.passengerCapacity = addPassengerCapacity;
+			return this;
+		}
+
+		public CarBuilder addIsAirConditioning(boolean addIsAirConditioning) {
+			Car.this.isAirConditioning = addIsAirConditioning;
+			return this;
+		}
+
+		public Car build() {
+			return Car.this;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Car mycar = Car.getCar().addModel("Nissan").addEngineCapacity(2.5)
+				.addDateOfProduction(LocalDate.of(2015, 02, 07)).addColor("White").addIsAirConditioning(true)
+				.addPassengerCapacity(5).build();
+		System.out.println(mycar);
+	}
+
+}
