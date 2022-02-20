@@ -1,0 +1,37 @@
+package hw6;
+
+abstract public class Employee implements Payment, Comparable<Employee>{
+	private int idNumber;
+	private String name;
+	
+	public Employee(int idNumber, String name ) {
+		this.idNumber = idNumber;
+		this.name = name;
+
+	}
+	
+	public int getIdNumber() {
+		return idNumber;
+	}
+	public void setIdNumber(int idNumber ) {
+		this.idNumber = idNumber;
+		
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Employee[ ID Number = "+ idNumber + " name = " + name + "]";
+	}
+	
+	public int compareTo(Employee e) {
+		return e.calculatePay() - this.calculatePay();
+		
+	}
+}

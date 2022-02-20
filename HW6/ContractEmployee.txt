@@ -1,0 +1,56 @@
+package hw6;
+
+public class ContractEmployee extends Employee implements Payment {
+	private String federalTaxIdmember;
+	private int hourlyRate;
+	private int hours;
+
+	public String getFederalTaxIdmember() {
+		return federalTaxIdmember;
+	}
+
+	public void setFederalTaxIdmember(String federalTaxIdmember) {
+		this.federalTaxIdmember = federalTaxIdmember;
+	}
+
+	public int getHourlyRate() {
+		return hourlyRate;
+	}
+
+	public void setHourlyRate(int hourlyRate) {
+		this.hourlyRate = hourlyRate;
+	}
+
+	public int getHours() {
+		return hours;
+	}
+
+	public void setHours(int hours) {
+		this.hours = hours;
+	}
+
+	@Override
+	public int calculatePay() {
+		return getHourlyRate() * getHours();
+	}
+
+	@Override
+	public String toString() {
+		return "ContractEmployee [ social Security Number = " + getIdNumber() + " Name " + getName()
+				+ " Payment = " + calculatePay() + "]";
+	}
+
+	public ContractEmployee(int idNumber, String name, String federalTaxIdmember, int hourlyRate,
+			int hours) {
+		super(idNumber, name);
+		this.federalTaxIdmember = federalTaxIdmember;
+		this.hourlyRate = hourlyRate;
+		this.hours = hours;
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		return o.calculatePay() - this.calculatePay();
+		
+	}
+}

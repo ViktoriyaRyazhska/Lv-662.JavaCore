@@ -1,0 +1,23 @@
+package hw6;
+
+public class SalariedEmployee extends Employee implements Payment {
+	private String socialSecurityNumber;
+	private int fixedMounthlyPayment;
+	
+	@Override
+	public int calculatePay() {
+		return fixedMounthlyPayment;
+	}
+	
+	public SalariedEmployee(int idNumber, String name, String socialSecurityNumber, int fixedMounthlyPayment ) {
+		super(idNumber, name);
+		this.socialSecurityNumber = socialSecurityNumber;
+		this.fixedMounthlyPayment = fixedMounthlyPayment;
+	}
+
+	@Override
+	public String toString() {
+		return "SalariedEmployee [ social Security Number = " + getIdNumber() + " Name " + getName()
+				+ " Fixed Mounthly Payment = " + fixedMounthlyPayment + "]";
+	}
+}
