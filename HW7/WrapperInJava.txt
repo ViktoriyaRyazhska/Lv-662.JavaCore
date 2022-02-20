@@ -1,0 +1,30 @@
+package hw7;
+
+public class WrapperInJava<T> {
+	private T value;
+
+	public T getValue() {
+		return value;
+	}
+
+	public void setValue(T value) {
+		this.value = value;
+
+	}
+
+	public static void main(String[] args) {
+
+		WrapperInJava<Integer> objInt = new WrapperInJava<>();
+		objInt.setValue(67);
+
+		WrapperInJava<String> objString = new WrapperInJava<>();
+		objString.setValue("Hello!");
+
+		WrapperInJava<Boolean> objBoolean = new WrapperInJava<>();
+		objBoolean.setValue(false);
+
+		System.out.println("Int - " + objInt.getValue() + ",  String  - " + objString.getValue() + ",  Boolean -  "
+				+ objBoolean.getValue());
+
+	}
+}

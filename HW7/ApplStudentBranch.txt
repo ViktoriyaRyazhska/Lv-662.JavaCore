@@ -1,0 +1,15 @@
+package hw7;
+
+public class ApplStudentBranch {
+	public static void main(String[] args) {
+		Person [] per =new Person[2];
+		per[0]= new Student(new FullName ("Olga", "Kovalova"), 18, 2);
+		per[1]= new Student(new FullName ("Oleh", "Rak"), 20, 4);
+	
+		for (int i = 0; i<per.length; i++) {
+			System.out.println(per[i].info());
+			System.out.println(per[i].activity());
+		}
+	}
+	
+}

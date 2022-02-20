@@ -1,0 +1,30 @@
+package hw7;
+
+public class Student extends Person {
+	private int branch;
+
+	public int getBranch() {
+		return branch;
+	}
+
+	public void setBranch(int branch) {
+		this.branch = branch;
+	}
+
+	public Student(FullName fullName, int age, int branch) {
+		super(fullName, age);
+		this.branch = branch;
+
+	}
+
+	@Override
+	public String activity() {
+		return "I laern technical sciences";
+	}
+
+	@Override
+	public String info() {
+		return "First name - " + getFullName().getFirstName() + ", Last name - " + getFullName().getLastName()
+				+ ", Age - " + getAge() + ", Branch - " + getBranch();
+	}
+}
